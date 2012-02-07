@@ -1,0 +1,513 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"f",
+				"font	font-size: size"
+			],
+			[
+				"mar",
+				"margin	margin-right: length"
+			],
+			[
+				"res",
+				"Responsive"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"d",
+				"display	display: block"
+			],
+			[
+				"margin",
+				"margin	margin: T R B L"
+			],
+			[
+				"p",
+				"padding	padding: all"
+			],
+			[
+				"m",
+				"margin	margin: all"
+			],
+			[
+				"displ",
+				"display	display: inline"
+			],
+			[
+				"l",
+				"lines"
+			],
+			[
+				"_",
+				"__	__magic__"
+			],
+			[
+				"read",
+				"readFile"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"tit",
+				"TitilliumThin"
+			],
+			[
+				"pa",
+				"padding	padding-left: length"
+			],
+			[
+				"con",
+				"contact"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"Qui",
+				"QuicksandDash"
+			],
+			[
+				"Quib",
+				"QuicksandBold"
+			],
+			[
+				"Quick",
+				"QuicksandBook"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"inl",
+				"invalid"
+			],
+			[
+				"pad",
+				"padding	padding-top: length"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"medi",
+				"media_icons"
+			],
+			[
+				"li",
+				"list	list-style-image: url"
+			],
+			[
+				"men",
+				"menu_show_left"
+			],
+			[
+				"ho",
+				"home_button"
+			],
+			[
+				"me",
+				"menu_show_left"
+			],
+			[
+				"H",
+				"home_button"
+			],
+			[
+				"menus",
+				"menu_show_right"
+			],
+			[
+				"show",
+				"menu_show_right"
+			],
+			[
+				"menu_show",
+				"menu_show_left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"git add .",
+				"Git: Add..."
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"set syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git ",
+				"Git: Push"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Diff Current File"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"",
+				"File: Save All"
+			]
+		],
+		"width": 523.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/zaahir/www/zaahir.ca/less/responsive-custom.less",
+		"/home/zaahir/www/zaahir.ca/less/responsive.less",
+		"/home/zaahir/.config/sublime-text-2/Packages/Terminal/Terminal.sublime-settings",
+		"/C/xampp/htdocs/zaahir.ca/less/responsive.less",
+		"/C/xampp/htdocs/zaahir.ca/less/variables.less",
+		"/C/xampp/htdocs/zaahir.ca/less/bootstrap.less",
+		"/C/xampp/htdocs/zaahir.ca/portfolio.html",
+		"/C/xampp/htdocs/zaahir.ca/less/mixins.less",
+		"/C/xampp/htdocs/zaahir.ca/resume.html",
+		"/C/xampp/htdocs/zaahir.ca/less/styles.less",
+		"/C/xampp/htdocs/Javascript, CSS, Toolkits, etc/bootstrap-v2.0.0-8/less/bootstrap.less",
+		"/C/xampp/htdocs/zaahir.ca/css/bootstrap.css",
+		"/C/xampp/htdocs/zaahir.ca/index.html",
+		"/C/Users/Zaahir/Dropbox/University/4QA3/Tests/Test 2/Practice Ch11.pdf",
+		"/C/Users/Zaahir/Downloads/wwwsqldesigner-2.6/wwwsqldesigner-2.6/index.html",
+		"/C/xampp/htdocs/zaahir.ca/less/resume.less",
+		"/C/xampp/htdocs/zaahir.ca/less/portfolio.less",
+		"/C/xampp/htdocs/zaahir.ca/js/functions.js",
+		"/C/xampp/htdocs/zaahir.ca/less/font-face.less",
+		"/C/xampp/htdocs/zaahir.ca/less/type.less",
+		"/C/xampp/htdocs/zaahir.ca/less/patterns.less",
+		"/C/xampp/htdocs/zaahir.ca/less/forms.less",
+		"/C/xampp/htdocs/zaahir.ca/less/scaffolding.less",
+		"/C/xampp/htdocs/zaahir.ca/less/reset.less",
+		"/C/xampp/htdocs/zaahir.ca/less/font-face.css",
+		"/C/xampp/htdocs/zaahir.ca/stylesheet/style.less",
+		"/C/Users/Zaahir/Dropbox/University/3C03/Assignments/Assignment 1/Assignment 1 - Code/tree",
+		"/C/Users/Zaahir/Dropbox/University/3C03/Assignments/Assignment 1/Assignment 1 - Code/tree.py",
+		"/C/Users/Zaahir/Dropbox/University/3C03/Assignments/Assignment 1/Assignment 1 - Code/test.txt",
+		"/C/Users/Zaahir/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/Zaahir/AppData/Roaming/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/C/Users/Zaahir/AppData/Roaming/Sublime Text 2/Packages/Default/Global.sublime-settings",
+		"/C/Users/Zaahir/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/C/xampp/htdocs/zaahir.ca/css/style.css",
+		"/C/xampp/htdocs/zaahir.ca/index.php",
+		"/C/xampp/htdocs/zaahir.ca/img/Background.jpg",
+		"/C/xampp/htdocs/zaahir.ca/.htaccess",
+		"/C/Users/Zaahir/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"padding: 0",
+			"padding:0",
+			"padding",
+			"inline",
+			"@",
+			"@w",
+			"					<div class=\"span2\">\n",
+			"<div class=\"span6\">",
+			"<div id=\"row\">",
+			"<div class=\"rectangle clear\"></div>",
+			"/* ==|== ",
+			"Author",
+			"pagination",
+			".pagination",
+			".slideshow a.advance-link",
+			"div",
+			"name=\"quant1\"",
+			"thumbs/quant1.png",
+			"jpg",
+			"png",
+			"alt",
+			"png\"",
+			"png\" ",
+			"em",
+			"p>",
+			"p",
+			"hr",
+			"hr>",
+			"<hr",
+			"</ul>",
+			"<div id=\"",
+			"row\">",
+			"</h3> <span>",
+			"<span>",
+			"<h3 class=\"span11\">",
+			"</h3><span>",
+			"<h3>",
+			"h3",
+			"8",
+			"span5",
+			"11",
+			"<h5",
+			"<h4",
+			"span11",
+			"<div class=\"row\">",
+			"</li>",
+			"<ul class=\"tabs\" data-tabs=\"tabs",
+			"<ul class=\"tabs\" data-tabs=\"tabs\">",
+			"<ul>\n			<div class=\"row\">",
+			"<ul>",
+			"<div class=\"row\">",
+			"span",
+			"</div>",
+			"></div>",
+			"<div class=\"row\">",
+			"<h2",
+			"<div class=\"span11\">",
+			"11",
+			"class=\"row\">",
+			"/h3",
+			"<h3>",
+			"h3",
+			"<h3",
+			"",
+			"margin-bottom: 17px;\n	border-bottom: 1px solid #DDD;\n	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);\n	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);\n	box-shadow: 0 1p",
+			"right\"",
+			"rectangle",
+			"</div>\n			</div>",
+			"</div>",
+			"<div class=\"row\">",
+			"offset",
+			"offset3",
+			"span4",
+			"span16",
+			"banner_text",
+			"span16",
+			"img/",
+			"img",
+			"less/",
+			"<",
+			"<div",
+			": 600px",
+			"footer {",
+			"footer{ margin",
+			"footer",
+			"border-top",
+			"clearfix",
+			"clear",
+			";}",
+			";",
+			"css",
+			"i",
+			"I",
+			"TitilliumText22L003",
+			"TitilliumText22L002",
+			"TitilliumText22L001",
+			"Habibi",
+			"id=\"",
+			"id=\"fb\"",
+			"id",
+			"0.1s",
+			"opacity",
+			"(",
+			"(img",
+			"../",
+			"ease",
+			"2s",
+			"5s",
+			"2",
+			"out",
+			"all 1.0",
+			"all 1.0s",
+			"widows",
+			"s",
+			" ;",
+			"#content",
+			"#conten",
+			"ease-out",
+			"content",
+			"2s",
+			"5s",
+			"ease",
+			"-",
+			"defaultout",
+			"default",
+			"#",
+			"transition",
+			"}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<div class=\"rectangle clear\"></div>",
+			": @width"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				".htaccess"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 299.0,
+	"status_bar_visible": true
+}

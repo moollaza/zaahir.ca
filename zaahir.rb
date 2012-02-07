@@ -12,3 +12,7 @@ end
 get '/resume/?' do
  redirect '/resume.html'
 end
+
+not_found do
+ redirect '/index.html'
+end

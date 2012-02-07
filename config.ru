@@ -1,3 +1,3 @@
-require 'zaahir'
+require './zaahir'
 
 run Sinatra::Application

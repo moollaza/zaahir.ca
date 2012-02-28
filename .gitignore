@@ -1,0 +1,13 @@
+.bundle/
+.sass-cache/
+.DS_Store
+tmp/**/*
+
+# Sinatra Specific
+/pkg
+/doc/api
+/Gemfile.lock
+
+# Sublime Text
+.sublime-project
+.sublime-workspace

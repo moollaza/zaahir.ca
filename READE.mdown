@@ -1,15 +1,18 @@
-## Zaahir Moolla - Personal Website
+Zaahir Moolla - Personal Website
+================================
 
-# CS Undergrad, Nerd, Musician, Aspiring Entrepreneur
+CS Undergrad, Nerd, Musician, Aspiring Entrepreneur
+---------------------------------------------------
 
 Welcome to my GitHub, feel free to look around.
 
 This website was built using:
-* [Sinatra](www.sinatrarb.com)
-* [Bootstrap](twitter.github.com/bootstrap/)
-* [Compass](compass-style.org)
-* [HAML](twitter.github.com/bootstrap/)
-* [SASS](sass-lang.com)
-* Written using [Sublime Text Editor](http://www.sublimetext.com/)
+
+*   [Sinatra](www.sinatrarb.com)
+*   [Bootstrap](twitter.github.com/bootstrap/)
+*   [Compass](compass-style.org)
+*   [HAML](twitter.github.com/bootstrap/)
+*   [SASS](sass-lang.com)
+*   Written using [Sublime Text Editor](http://www.sublimetext.com/)
 
 Thanks for stopping by!

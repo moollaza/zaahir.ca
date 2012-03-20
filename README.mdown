@@ -15,6 +15,7 @@ This is the current code for my personal website, it was built using:
 *   [Compass](http://compass-style.org)
 *   [HAML](http://twitter.github.com/bootstrap/)
 *   [SASS](http://sass-lang.com)
+*   [AWS] (http://aws.amazon.com/)
 *   Written using [Sublime Text Editor](http://www.sublimetext.com/)
 
 Also, feel free to try check it out on different devices or just

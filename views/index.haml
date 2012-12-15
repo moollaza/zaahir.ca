@@ -1,0 +1,21 @@
+= partial :head
+
+%body
+	.container
+		%header
+			/ %img#my_name{:alt => "My Name ->", :src => "http://assets.zaahir.ca/img/my_name.png"}
+			%h1.nomargin.nopadding{id:"name"} Zaahir Moolla
+			%h5.nomargin.nopadding.uppercase{id:"tag"} Undergrad.Nerd.Musician
+			/ %img#who{:alt => "<- Who I Am", :src => "http://assets.zaahir.ca/img/who.png"}
+
+		#menu
+			#hide
+				#menu_text.banner_text MENU
+			#show
+				%a#home_button.banner_text HOME
+				%p.banner_text -
+				%a#contact_button.banner_text CONTACT
+				%p.banner_text -
+				%a#about_button.banner_text ABOUT
+			
+	= partial :footer

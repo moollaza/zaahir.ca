@@ -1,0 +1,309 @@
+/* ==========================================================================
+   HELPERS
+   ========================================================================== */
+
+.hide { display: none; }
+.show { display: block; }
+.nomargin {margin: 0; }
+.nopadding {padding: 0 }
+.uppercase {text-transform: uppercase;}
+/* ==========================================================================
+   LANDING STYLES
+   ========================================================================== */
+
+body {
+  margin: 80px 40px 0
+}
+
+header {
+  text-align: center;
+}
+
+.banner_text {
+  font-family: 'QuicksandBook', sans-serif;
+  color: black;
+  text-shadow: rgba(255, 255, 255, 0.2) 0.05em 0.05em 0.7px;
+  position: relative;
+  letter-spacing: 0.18em;
+  display: inline-block;
+}
+
+#my_name, #who {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+  opacity: 0.6;
+  position: relative;
+  background: no-repeat;
+}
+
+#my_name {
+  height: 71px;
+  width: 134px;
+}
+
+#who {
+  width: 112px;
+  height: 71px;
+}
+
+#content_container {
+  
+}
+
+#content {
+  
+}
+
+#media_icons {
+  width: 100%;
+  padding: 0;
+}
+
+#media_icons a {
+  margin: 0 auto;
+  display: inline-block;
+  border-radius: 8px;
+  padding-top: 4px;
+  padding-left: 2px;
+}
+
+#media_icons a img {
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+}
+
+#media_icons a:hover img {
+  opacity: 1;
+  -moz-opacity: 1;
+}
+
+#media_icons li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#menu {
+  height: 50px;
+  position: relative;
+}
+
+#menu:hover #hide {
+  opacity: 0;
+}
+
+#menu:hover #show {
+  opacity: 100;
+}
+
+#hide, #show {
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+#show {
+  opacity: 0;
+}
+
+#show .banner_text {
+  text-decoration: none;
+  letter-spacing: 0em;
+}
+
+#show a:hover {
+  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
+}
+
+#show .rectangle {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+#menu_options {
+
+}
+
+/* ==== FOOTER =====================================================*/
+footer {
+  position: relative;
+  bottom: 0;
+  margin: 10px auto 0px;
+  text-align: center;
+  color: #333;
+  text-decoration: none;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+footer ul {
+  list-style-type: none;
+  display: block;
+  margin: 0 auto;
+  padding: 4px;
+}
+
+footer ul li {
+  display: inline;
+  border-right: 1px solid #FFF;
+}
+
+footer ul li:last-of-type {
+  border-right: none;
+}
+
+footer ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+/* ==== RESUME STYLES =====================================================
+Author:  Zaahir Moolla
+========================================================================== */
+#resume {
+  margin-top: 30px;
+  background: #ffffff;
+  box-shadow: #000 2px 2px 2px;
+  padding: 0px 30px 5px;
+  border-radius: 10px;
+}
+
+#resume h1,
+#resume h2,
+#resume h3,
+#resume h4,
+#resume h5,
+#resume p,
+#resume span {
+  font-weight: bold;
+}
+
+#resume h1 {
+  font-family: 'AnonymousProBold';
+  margin: 0 !important;
+}
+
+#resume h2,
+#resume h3,
+#resume h4,
+#resume h5,
+#resume p,
+#resume span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 36px;
+}
+
+#resume .span3, #resume .span1 {
+  text-align: right;
+}
+
+#resume h4.span3 {
+  text-align: left;
+}
+
+#resume li {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 8px;
+}
+
+#resume .tabbed {
+  margin-top: 20px;
+  padding-bottom: 0px;
+}
+
+#resume .tabbed li {
+  margin-bottom: 0;
+}
+
+#resume .tabbed li a:hover {
+  text-shadow: none;
+}
+
+#resume .tabbed .active a, #resume .tabbed .active a:hover {
+  color: #000;
+  text-shadow: none;
+}
+
+#resume #title {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #DDD;
+}
+
+.specialfooter {
+  margin-top: 30px;
+  position: relative;
+  bottom: 0px;
+}
+
+/* ==== RESUME STYLES =====================================================
+   Author:  Zaahir Moolla
+   ========================================================================== */
+#title {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #666;
+}
+
+#portfolio h1 {
+  font-family: 'AnonymousProBold';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#portfolio h4 {
+  font-weight: bold;
+}
+
+#portfolio img {
+  margin: 0 auto;
+  max-height: 500px;
+}
+
+#portfolio .span1 {
+  text-align: right;
+}
+
+#portfolio .carousel-inner {
+  background-color: black;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* ==========================================================================
+   Custom Media Queries
+   ========================================================================== */
+
+/* Large desktop */
+@media (min-width: 1500px) { }
+
+/* Large desktop */
+@media (min-width: 1200px) { }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 9 8px) { }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { }
+

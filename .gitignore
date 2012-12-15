@@ -1,12 +1,16 @@
-.bundle/
-.sass-cache/
-.DS_Store
-tmp/**/*
-
-# Sinatra Specific
-/pkg
-/doc/api
-/Gemfile.lock
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
 
 # Sublime Text
 .sublime-project

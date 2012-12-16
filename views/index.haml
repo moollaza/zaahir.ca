@@ -2,20 +2,21 @@
 
 %body
 	.container
-		%header
-			/ %img#my_name{:alt => "My Name ->", :src => "http://assets.zaahir.ca/img/my_name.png"}
-			%h1.nomargin.nopadding{id:"name"} Zaahir Moolla
-			%h5.nomargin.nopadding.uppercase{id:"tag"} Undergrad.Nerd.Musician
-			/ %img#who{:alt => "<- Who I Am", :src => "http://assets.zaahir.ca/img/who.png"}
+		%header.text-centered
+			%h1#name.inline-block.nomargin.nopadding.uppercase Zaahir Moolla
+			#tag_container
+				%div.line.nomargin.nopadding.inline-block.absolute.pull-left
+				%h5#tag.nomargin.nopadding.uppercase.inline-block
+					hacker, nerd
+					%span & 
+					musician
+				%div.line.nomargin.nopadding.inline-block.absolute.pull-right
 
-		#menu
-			#hide
-				#menu_text.banner_text MENU
-			#show
-				%a#home_button.banner_text HOME
-				%p.banner_text -
-				%a#contact_button.banner_text CONTACT
-				%p.banner_text -
-				%a#about_button.banner_text ABOUT
+		#menu.text-centered
+			%a#home_button.inline-block.btn.btn-link HOME
+			%p.inline-block -
+			%a#contact_button.inline-block.btn.btn-link CONTACT
+			%p.inline-block -
+			%a#about_button.inline-block.btn.btn-link ABOUT
 			
 	= partial :footer

@@ -3,7 +3,7 @@ $(document).ready(function() {
   // Setup Gray Bars and their width/height/offset
   $("#tag_container").width(($("#name").width()));
   $("header .line").width((($("#name").width() - $("#tag").width())/2) - 1);
-  var top_offset = $("#tag_container").height()/2 - $(".line").height()/2;
+  var top_offset = $("#tag_container").outerHeight()/2 - $(".line").height()/2 + 1;
   $(".line").css("top", top_offset + "px");
   
   // Used to slide content sections horizontally

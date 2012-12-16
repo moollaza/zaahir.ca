@@ -2,24 +2,16 @@
 
 %body
 	.container
-		%header.text-centered
-			%h1#name.inline-block.nomargin.nopadding.uppercase Zaahir Moolla
-			#tag_container
-				%div.line.nomargin.nopadding.inline-block.absolute.pull-left
-				%h5#tag.nomargin.nopadding.uppercase.inline-block
-					hacker, nerd
-					%span &amp; 
-					musician
-				%div.line.nomargin.nopadding.inline-block.absolute.pull-right
+		= partial :header
 
-		#content_container
+		#main.content_container
 			#content        
-				%section#home
+				%section#home.text-centered
 					%h1 I'm Awesome :)
-					
-				%section#contact
+
+				%section#contact.text-centered
 					%h1 Contact &amp; Connect...
-					%ul#media_icons
+					%ul#media_icons.nomargin.nopadding
 						%li#facebook
 							%a{:href => "http://www.facebook.com/zmoolla"}
 								%img{:alt => "Facebook", :src => "http://assets.zaahir.ca/img/facebook.png"}/
@@ -29,19 +21,19 @@
 						%li#google-plus
 							%a{:href => "http://plus.google.com/105644640455090064317"}
 								%img{:alt => "Google Plus", :src => "http://assets.zaahir.ca/img/google-plus.png"}
-								%li#linkedin
+						%li#linkedin
 							%a{:href => "http://www.linkedin.com/in/zmoolla"}
 								%img{:alt => "LinkedIn", :src => "http://assets.zaahir.ca/img/linkedin.png"}
-								%li#flickr
+						%li#flickr
 							%a{:href => "http://www.flickr.com/photos/zaahir"}
 								%img{:alt => "Flickr", :src => "http://assets.zaahir.ca/img/flickr.png"}
-								%li#youtube
+						%li#youtube
 							%a{:href => "http://www.youtube.com/Moollaman"}
 								%img{:alt => "Youtube", :src => "http://assets.zaahir.ca/img/youtube.png"}
-								%li#forrst
+						%li#forrst
 							%a{:href => "http://forrst.me/moollaza"}
 								%img{:alt => "Forrst", :src => "http://assets.zaahir.ca/img/forrst.png"}
-								%li#github
+						%li#github
 							%a{:href => "http://www.github.com/moollaza"}
 								%img{:alt => "Github", :src => "http://assets.zaahir.ca/img/github.png"}
 
@@ -58,10 +50,10 @@
 						= succeed "," do
 							%a{:href => "mailto:info@zaahir.ca"} email
 						you can also check out my
-						%a{:href => "resume.html"} resume
+						%a{:href => "/resume"} resume
 						and my
 						= succeed "." do
-							%a{:href => "portfolio.html"} portfolio
+							%a{:href => "/portfolio"} portfolio
 
 		%nav#menu.text-centered
 			%a#home_button.inline-block.btn.btn-link HOME

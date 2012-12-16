@@ -36,7 +36,7 @@ header {
   position: relative;
 }
 
-#tag_container div.line {
+.line {
   height: 5px;
   background-color: #999;
 }
@@ -48,11 +48,14 @@ header {
 
 #tag span {
   font-family: cursive;
+  line-height: 40px;
+  font-size: 38.5px;
+  vertical-align: sub;
 }
 
-#content_container {
+.content_container {
   overflow: hidden;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 960px;
   min-height: 300px;
   border: 1px solid #CCC;
@@ -106,10 +109,12 @@ section {
 
 #menu a {
   color: #000;
+  font-weight: bold;
 }
 
 footer {
   text-align: center;
+  font-size: 10px
 }
 
 /* ==== RESUME STYLES =====================================================
@@ -117,10 +122,18 @@ Author:  Zaahir Moolla
 ========================================================================== */
 #resume {
   margin-top: 30px;
-  background: #ffffff;
-  box-shadow: #000 2px 2px 2px;
-  padding: 0px 30px 5px;
-  border-radius: 10px;
+  /*background: #ffffff;*/
+  /*box-shadow: #000 2px 2px 2px;*/
+  /*padding: 0px 30px 5px;*/
+  /*border-radius: 10px;*/
+}
+
+#resume.content {
+  width: 100%
+}
+
+#resume section {
+  width: 100%;
 }
 
 #resume h1,
@@ -130,12 +143,12 @@ Author:  Zaahir Moolla
 #resume h5,
 #resume p,
 #resume span {
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 #resume h1 {
-  font-family: 'AnonymousProBold';
-  margin: 0 !important;
+  /*font-family: 'AnonymousProBold';*/
+  /*margin: 0 !important;*/
 }
 
 #resume h2,
@@ -144,8 +157,8 @@ Author:  Zaahir Moolla
 #resume h5,
 #resume p,
 #resume span {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 36px;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  /*line-height: 36px;*/
 }
 
 #resume .span3, #resume .span1 {
@@ -157,7 +170,7 @@ Author:  Zaahir Moolla
 }
 
 #resume li {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   margin-bottom: 8px;
 }
 

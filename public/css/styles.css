@@ -18,7 +18,9 @@
    LANDING STYLES
    ========================================================================== */
 
-body { margin: 80px 40px 0; }
+body { 
+  margin: 80px 40px 0;
+}
 
 header {
   margin-bottom: 40px
@@ -48,8 +50,30 @@ header {
   font-family: cursive;
 }
 
-#menu a {
-  color: #000;
+#content_container {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 960px;
+  min-height: 300px;
+  border: 1px solid #CCC;
+}
+
+#content {
+  width: 300%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+section {
+  width: 33.33%;
+  height: 100%;
+  float: left;
 }
 
 #media_icons {
@@ -80,6 +104,9 @@ header {
   display: inline-block;
 }
 
+#menu a {
+  color: #000;
+}
 
 footer {
   text-align: center;
@@ -218,4 +245,3 @@ Author:  Zaahir Moolla
 
 /* Landscape phones and down */
 @media (max-width: 480px) { }
-

@@ -5,98 +5,44 @@
 		= partial :header
 
 		#resume.content_container
-			#content 
-				%section#title
-					.row
-						.span11
-							%h1 Zaahir Moolla - Resume
-						.span1
-							%p
-								%a.btn.btn-small{:href => "index.html"} Back
-				%section#profile
-					.row
-						.span12
-							%h2.heading Profile
-							%p A 3rd year Business Informatics (CS & business) undergraduate, studying at McMaster University, located in Ontario, Canada.
-				%section.tabbable
-					%ul.nav.nav-tabs.tabbed
-						%li.active
-							%a{"data-toggle" => "tab", :href => "#experience"} Experience
-						%li
-							%a{"data-toggle" => "tab", :href => "#skills"} Technical Skills
-						%li
-							%a{"data-toggle" => "tab", :href => "#education"} Education
-						%li
-							%a{"data-toggle" => "tab", :href => "#hobbies"} Extracurriculars & Hobbies
-						%li
-							%a{"data-toggle" => "tab", :href => "#interests"} Interests
-						%li
-							%a{"data-toggle" => "tab", :href => "#fact"} Cool Fact
-					
-					.tab-content
-						#experience.tab-pane.active
-							%h2.heading Experience
-							.row
-								.span9
-									%h3 Senior Web Developer (Summer Employment)
-									%h4 Quant Interpretations Inc., Hamilton, ON
-									%ul
-										%li Overhauled the company’s web application (backend & frontend) transformed it into a visually appealing, more useful application which both clients and my employer thoroughly enjoyed
-										%li Implemented with PHP and the CodeIgniter framework, as well HTML5 and CSS3 improved the application’s overall design and function
-										%li Designed and implemented a small RESTful API allowing third party integration with the application
-								.span3
-									%small May 2011 – September 2011
-							%hr
-								.row
-									.span9
-										%h3 Bachelor of Applied Science, Honours Business Informatics
-										%h4 McMaster University, Hamilton, ON
-										%ul
-											%li Currently in level 3 of a unique 4 year program; studying Computer Science and Business
-											%li Registered in the Engineering Co-Op Program
-									.span3
-										%small Expected Completion April 2013
-							%hr
-							.row
-								.span9
-									%h3 Engineering Student (Co-Op)
-									%h4 General Motors Oshawa Truck Plant Paint Shop, Engineering Office
-									%ul
-										%li Collaborated with multiple engineers of different principles, analyzed their job requirements and entailments, gained knowledge of what engineers do and how they do it
-										%li Designed and developed an excel database, complete with an accompanying GUI as well as a macro to manage and organize it on a daily basis, improved ability to track work orders
-										%li Engineered a more efficient, ergonomic work bench for quality assurance personnel using Auto Cad, achieved a favourable design which reduced possibility of workplace injury
-								.span3
-									%small September 2007 – January 2008
-							%hr
-							.row
-								.span9
-									%h3 Kitchen Staff Member
-									%h4 McDonald’s Restaurant, Whitby, ON
-									%ul
-										%li Cooked and prepared food in a fast pace environment, assembled customers’ orders, achieved timely delivery of properly constructed meals to customers
-								.span3
-									%small November 2006 – May 2007
-						
-						#skills.tab-pane
-							%h2.heading Technical Skills
-							.row
-								%h4.span3 Operating Systems:
-								%h5.span9 Windows, some LINUX and MacOS
-							.row
-								%h4.span3 Web Development:
-								%h5.span9 PHP, HTML, CSS, SQL, JavaScript, AJAX, JQuery, MySQL, Apache
-							.row
-								%h4.span3 Languages:
-								%h5.span9 Python, C++, Java, Haskell
-							.row
-								%h4.span3 Software:
-								%h5.span9 Microsoft Office, Adobe Photoshop, Illustrator & Dreamweaver CS5
-							.row
-								%h4.span3 Other
-								%h5.span9 LATEX, OpenGL, GLUT, ProTools, Cubase 5, VMware
-						
-						#education.tab-pane
-							%h2.heading Education
+			%section
+				%a#back.btn.btn-small.pull-right{:href => "/"} Back
+				%h1.page-header Resume
+			
+			%section#profile
+				.row
+					.span12
+						%h2.heading Profile
+						%p A 3rd year Business Informatics (CS & business) undergraduate, studying at McMaster University, located in Ontario, Canada.
+			%section.tabbable
+				%ul.nav.nav-tabs.tabbed
+					%li.active
+						%a{"data-toggle" => "tab", :href => "#experience"} Experience
+					%li
+						%a{"data-toggle" => "tab", :href => "#skills"} Technical Skills
+					%li
+						%a{"data-toggle" => "tab", :href => "#education"} Education
+					%li
+						%a{"data-toggle" => "tab", :href => "#hobbies"} Extracurriculars & Hobbies
+					%li
+						%a{"data-toggle" => "tab", :href => "#interests"} Interests
+					%li
+						%a{"data-toggle" => "tab", :href => "#fact"} Cool Fact
+				
+				.tab-content
+					#experience.tab-pane.active
+						%h2.heading Experience
+						.row
+							.span9
+								%h3 Senior Web Developer (Summer Employment)
+								%h4 Quant Interpretations Inc., Hamilton, ON
+								%ul
+									%li Overhauled the company’s web application (backend & frontend) transformed it into a visually appealing, more useful application which both clients and my employer thoroughly enjoyed
+									%li Implemented with PHP and the CodeIgniter framework, as well HTML5 and CSS3 improved the application’s overall design and function
+									%li Designed and implemented a small RESTful API allowing third party integration with the application
+							.span3
+								%small May 2011 – September 2011
+						%hr
 							.row
 								.span9
 									%h3 Bachelor of Applied Science, Honours Business Informatics
@@ -106,95 +52,145 @@
 										%li Registered in the Engineering Co-Op Program
 								.span3
 									%small Expected Completion April 2013
-							%hr
-							.row
-								.span9
-									%h3 Ontario Secondary School Diploma (OSSD) - Gifted Program
-									%h4 Sinclair Secondary School, Whitby, ON
+						%hr
+						.row
+							.span9
+								%h3 Engineering Student (Co-Op)
+								%h4 General Motors Oshawa Truck Plant Paint Shop, Engineering Office
+								%ul
+									%li Collaborated with multiple engineers of different principles, analyzed their job requirements and entailments, gained knowledge of what engineers do and how they do it
+									%li Designed and developed an excel database, complete with an accompanying GUI as well as a macro to manage and organize it on a daily basis, improved ability to track work orders
+									%li Engineered a more efficient, ergonomic work bench for quality assurance personnel using Auto Cad, achieved a favourable design which reduced possibility of workplace injury
+							.span3
+								%small September 2007 – January 2008
+						%hr
+						.row
+							.span9
+								%h3 Kitchen Staff Member
+								%h4 McDonald’s Restaurant, Whitby, ON
+								%ul
+									%li Cooked and prepared food in a fast pace environment, assembled customers’ orders, achieved timely delivery of properly constructed meals to customers
+							.span3
+								%small November 2006 – May 2007
+					
+					#skills.tab-pane
+						%h2.heading Technical Skills
+						.row
+							%h4.span3 Operating Systems:
+							%h5.span9 Windows, some LINUX and MacOS
+						.row
+							%h4.span3 Web Development:
+							%h5.span9 PHP, HTML, CSS, SQL, JavaScript, AJAX, JQuery, MySQL, Apache
+						.row
+							%h4.span3 Languages:
+							%h5.span9 Python, C++, Java, Haskell
+						.row
+							%h4.span3 Software:
+							%h5.span9 Microsoft Office, Adobe Photoshop, Illustrator & Dreamweaver CS5
+						.row
+							%h4.span3 Other
+							%h5.span9 LATEX, OpenGL, GLUT, ProTools, Cubase 5, VMware
+					
+					#education.tab-pane
+						%h2.heading Education
+						.row
+							.span9
+								%h3 Bachelor of Applied Science, Honours Business Informatics
+								%h4 McMaster University, Hamilton, ON
+								%ul
+									%li Currently in level 3 of a unique 4 year program; studying Computer Science and Business
+									%li Registered in the Engineering Co-Op Program
+							.span3
+								%small Expected Completion April 2013
+						%hr
+						.row
+							.span9
+								%h3 Ontario Secondary School Diploma (OSSD) - Gifted Program
+								%h4 Sinclair Secondary School, Whitby, ON
+								%ul
+									%li Honours Gr.9, Gr.10, Gr.11 – Maintained over 80% average
+							.span3
+								%small Completed June 2009
+					
+					#hobbies.tab-pane
+						%h2.heading Extracurriculars & Hobbies
+						.row
+							.span9
+								%h3 Co-Founded a Web Startup Company – MealDeck.com
+								%ul
+									%li Assisted with design & development of web application
+									%li Designed logo and promotional material
+									%li Networked at several social events, promoted MealDeck
+									%li Presented MealDeck at Hamilton DemoCamp
+							.span3
+								%small 2010 – Present
+						%hr
+						.row
+							.span9
+								%h3 Self-taught Web Developer and Web Designer
+								%ul
+									%li
+										Developed my personal website, utilizing
+										%b HTML5
+										and
+										%b CSS3
+										as well as Twitter's
+										%b Bootstrap
+							.span3
+								%small 2010 – Present
+						%hr
+						.row
+							.span9
+								%h3 Member of McMaster Solar Car Team (Business Team)
+								%ul
+									%li Gathered information and researched parts (solar cells, motors, batteries)
+									%li Sourced out potential financial donators and contributors
+									%li Attended several public events with the business team, presented about the car and team
+									%li Revised team budget and finances with team leaders
+							.span3
+								%small 2009 – 2011
+						%hr
+						.row
+							.span9
+								%h3 Avid musician and amateur recording engineer
+								%ul
+									%li Self-taught guitarist; practice and perform regularly
+									%li Learning to record, mix and master vocal and guitar tracks to create studio quality music
+							.span3
+								%small 2006 – Present
+						%hr
+						.row
+							.span9
+								%h3 Often work during summers at my father`s tire store, PTS Tires
+								%ul
+									%li Assisted clientele with tire advice and sales, in-person and by phone
+									%li Created customer invoices using QuickBooks
+							.span3
+								%small 2005 – Present
+						%hr
+						.row
+							.span9
+								%h3 Volunteer with the Whitby Youth Council
+								%ul
+									%li Worked with a team of high school students organizing and planning events
 									%ul
-										%li Honours Gr.9, Gr.10, Gr.11 – Maintained over 80% average
-								.span3
-									%small Completed June 2009
-						
-						#hobbies.tab-pane
-							%h2.heading Extracurriculars & Hobbies
-							.row
-								.span9
-									%h3 Co-Founded a Web Startup Company – MealDeck.com
-									%ul
-										%li Assisted with design & development of web application
-										%li Designed logo and promotional material
-										%li Networked at several social events, promoted MealDeck
-										%li Presented MealDeck at Hamilton DemoCamp
-								.span3
-									%small 2010 – Present
-							%hr
-							.row
-								.span9
-									%h3 Self-taught Web Developer and Web Designer
-									%ul
-										%li
-											Developed my personal website, utilizing
-											%b HTML5
-											and
-											%b CSS3
-											as well as Twitter's
-											%b Bootstrap
-								.span3
-									%small 2010 – Present
-							%hr
-							.row
-								.span9
-									%h3 Member of McMaster Solar Car Team (Business Team)
-									%ul
-										%li Gathered information and researched parts (solar cells, motors, batteries)
-										%li Sourced out potential financial donators and contributors
-										%li Attended several public events with the business team, presented about the car and team
-										%li Revised team budget and finances with team leaders
-								.span3
-									%small 2009 – 2011
-							%hr
-							.row
-								.span9
-									%h3 Avid musician and amateur recording engineer
-									%ul
-										%li Self-taught guitarist; practice and perform regularly
-										%li Learning to record, mix and master vocal and guitar tracks to create studio quality music
-								.span3
-									%small 2006 – Present
-							%hr
-							.row
-								.span9
-									%h3 Often work during summers at my father`s tire store, PTS Tires
-									%ul
-										%li Assisted clientele with tire advice and sales, in-person and by phone
-										%li Created customer invoices using QuickBooks
-								.span3
-									%small 2005 – Present
-							%hr
-							.row
-								.span9
-									%h3 Volunteer with the Whitby Youth Council
-									%ul
-										%li Worked with a team of high school students organizing and planning events
-										%ul
-											%li Eg. Whitby’s Annual Youth Fair (Job Fair)
-										%li Planned, designed and implemented local “Youth Rooms” throughout Whitby, which offered free public computer use, electronic and board games as well as information and advice
-								.span3
-									%small 2005 – 2007
-						
-						#interests.tab-pane
-							%h2.heading Interests
-							%ul
-								%li Startups, Technology, Silicon Valley
-								%li Music, Graphic Design, Gaming
-								%li Web development and Web Design
-								%li Regularly follow HackerNews, Engadget, Local/World News
-						
-						#fact.tab-pane
-							%h2 Cool Fact
-							%p
-								I once chased a purse snatcher from inside a grocery to the parking lot outside
-								%br He eventually gave up running; I apprehended him and was able to give the lady her purse back.
+										%li Eg. Whitby’s Annual Youth Fair (Job Fair)
+									%li Planned, designed and implemented local “Youth Rooms” throughout Whitby, which offered free public computer use, electronic and board games as well as information and advice
+							.span3
+								%small 2005 – 2007
+					
+					#interests.tab-pane
+						%h2.heading Interests
+						%ul
+							%li Startups, Technology, Silicon Valley
+							%li Music, Graphic Design, Gaming
+							%li Web development and Web Design
+							%li Regularly follow HackerNews, Engadget, Local/World News
+					
+					#fact.tab-pane
+						%h2 Cool Fact
+						%p
+							I once chased a purse snatcher from inside a grocery to the parking lot outside
+							%br He eventually gave up running; I apprehended him and was able to give the lady her purse back.
 	
 	= partial :footer

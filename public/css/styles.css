@@ -61,11 +61,11 @@ header {
   border: 1px solid #CCC;
 }
 
-#content {
+.content {
+  display: inline-block;
   width: 300%;
   height: 100%;
   position: relative;
-  padding: 10px;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -74,9 +74,9 @@ header {
 }
 
 section {
-  width: 33.33%;
+  width: 940px; /*33.33%;*/
   height: 100%;
-  float: left;
+  padding: 0 10px;
 }
 
 #media_icons {
@@ -122,43 +122,10 @@ Author:  Zaahir Moolla
 ========================================================================== */
 #resume {
   margin-top: 30px;
-  /*background: #ffffff;*/
-  /*box-shadow: #000 2px 2px 2px;*/
-  /*padding: 0px 30px 5px;*/
-  /*border-radius: 10px;*/
 }
 
-#resume.content {
-  width: 100%
-}
-
-#resume section {
-  width: 100%;
-}
-
-#resume h1,
-#resume h2,
-#resume h3,
-#resume h4,
-#resume h5,
-#resume p,
-#resume span {
-  /*font-weight: bold;*/
-}
-
-#resume h1 {
-  /*font-family: 'AnonymousProBold';*/
-  /*margin: 0 !important;*/
-}
-
-#resume h2,
-#resume h3,
-#resume h4,
-#resume h5,
-#resume p,
-#resume span {
-  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  /*line-height: 36px;*/
+#back {
+  margin-left: -10px;
 }
 
 #resume .span3, #resume .span1 {

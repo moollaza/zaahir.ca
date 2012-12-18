@@ -20,19 +20,18 @@
 
 body { 
   margin: 80px 40px 0;
-}
-
-header {
-  margin-bottom: 40px
+  font-family: Consolas, “Lucida Console”, Monaco, monospace;
+  overflow-y: scroll;
 }
 
 #name {
   font-size: 68.5px;
-  line-height: 70px
+  line-height: 70px;
+  font-family: "Segoe UI", Segoe, Tahoma, Geneva, sans-serif;
 }
 
 #tag_container { 
-  margin: 0 auto;
+  margin: 20px auto 30px;
   position: relative;
 }
 
@@ -42,29 +41,28 @@ header {
 }
 
 #tag {
-  font-size: 18.5px;
+  font-size: 20px; /*18.5px;*/
   line-height: 20px;
 }
 
 #tag span {
-  font-family: cursive;
-  line-height: 40px;
-  font-size: 38.5px;
+  line-height: 20px;
+  font-size: 40px;
   vertical-align: sub;
 }
 
 .content_container {
   overflow: hidden;
-  margin: 20px auto;
-  width: 960px;
-  min-height: 300px;
-  border: 1px solid #CCC;
+  border-top: 4px solid #CCC;
+  border-bottom: 4px solid #CCC;
+  border-style: double;
+  border-left: none;
+  border-right: none;
 }
 
-.content {
-  display: inline-block;
+#slider {
+  padding-top: 20px;
   width: 300%;
-  height: 100%;
   position: relative;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -73,14 +71,19 @@ header {
   transition: all 1s;
 }
 
-section {
-  width: 940px; /*33.33%;*/
+.content {
+  display: inline-block;
+  height: 100%;
+
+}
+
+#index section {
   height: 100%;
   padding: 0 10px;
 }
 
 #media_icons {
-  width: 100%;
+  margin: 50px auto;
   padding: 0;
 }
 
@@ -114,19 +117,13 @@ section {
 
 footer {
   text-align: center;
-  font-size: 10px
+  font-size: 10px;
+  margin-top: 40px;
 }
 
-/* ==== RESUME STYLES =====================================================
-Author:  Zaahir Moolla
-========================================================================== */
-#resume {
-  margin-top: 30px;
-}
-
-#back {
-  margin-left: -10px;
-}
+/* ==========================================================================
+   RESUME STYLES
+   ========================================================================== */
 
 #resume .span3, #resume .span1 {
   text-align: right;
@@ -171,8 +168,8 @@ Author:  Zaahir Moolla
   bottom: 0px;
 }
 
-/* ==== RESUME STYLES =====================================================
-   Author:  Zaahir Moolla
+/* ==========================================================================
+   PORTFOLIO STYLES
    ========================================================================== */
 #title {
   margin-top: 30px;

@@ -4,17 +4,17 @@
 	.container
 		= partial :header
 
-		#resume.content_container
-			%section
+		#resume.row
+			%section.span12
 				%a#back.btn.btn-small.pull-right{:href => "/"} Back
 				%h1.page-header Resume
 			
-			%section#profile
+			%section#profile.span12
 				.row
 					.span12
 						%h2.heading Profile
 						%p A 3rd year Business Informatics (CS & business) undergraduate, studying at McMaster University, located in Ontario, Canada.
-			%section.tabbable
+			%section.tabbable.span12
 				%ul.nav.nav-tabs.tabbed
 					%li.active
 						%a{"data-toggle" => "tab", :href => "#experience"} Experience
@@ -37,9 +37,9 @@
 								%h3 Senior Web Developer (Summer Employment)
 								%h4 Quant Interpretations Inc., Hamilton, ON
 								%ul
-									%li Overhauled the company’s web application (backend & frontend) transformed it into a visually appealing, more useful application which both clients and my employer thoroughly enjoyed
-									%li Implemented with PHP and the CodeIgniter framework, as well HTML5 and CSS3 improved the application’s overall design and function
-									%li Designed and implemented a small RESTful API allowing third party integration with the application
+									%li <p>Overhauled the company’s web application (backend & frontend) transformed it into a visually appealing, more useful application which both clients and my employer thoroughly enjoyed</p>
+									%li <p>Implemented with PHP and the CodeIgniter framework, as well HTML5 and CSS3 improved the application’s overall design and function</p>
+									%li <p>Designed and implemented a small RESTful API allowing third party integration with the application</p>
 							.span3
 								%small May 2011 – September 2011
 						%hr
@@ -48,8 +48,8 @@
 									%h3 Bachelor of Applied Science, Honours Business Informatics
 									%h4 McMaster University, Hamilton, ON
 									%ul
-										%li Currently in level 3 of a unique 4 year program; studying Computer Science and Business
-										%li Registered in the Engineering Co-Op Program
+										%li <p>Currently in level 3 of a unique 4 year program; studying Computer Science and Business</p>
+										%li <p>Registered in the Engineering Co-Op Program</p>
 								.span3
 									%small Expected Completion April 2013
 						%hr
@@ -58,9 +58,9 @@
 								%h3 Engineering Student (Co-Op)
 								%h4 General Motors Oshawa Truck Plant Paint Shop, Engineering Office
 								%ul
-									%li Collaborated with multiple engineers of different principles, analyzed their job requirements and entailments, gained knowledge of what engineers do and how they do it
-									%li Designed and developed an excel database, complete with an accompanying GUI as well as a macro to manage and organize it on a daily basis, improved ability to track work orders
-									%li Engineered a more efficient, ergonomic work bench for quality assurance personnel using Auto Cad, achieved a favourable design which reduced possibility of workplace injury
+									%li <p>Collaborated with multiple engineers of different principles, analyzed their job requirements and entailments, gained knowledge of what engineers do and how they do it</p>
+									%li <p>Designed and developed an excel database, complete with an accompanying GUI as well as a macro to manage and organize it on a daily basis, improved ability to track work orders</p>
+									%li <p>Engineered a more efficient, ergonomic work bench for quality assurance personnel using Auto Cad, achieved a favourable design which reduced possibility of workplace injury</p>
 							.span3
 								%small September 2007 – January 2008
 						%hr
@@ -69,7 +69,7 @@
 								%h3 Kitchen Staff Member
 								%h4 McDonald’s Restaurant, Whitby, ON
 								%ul
-									%li Cooked and prepared food in a fast pace environment, assembled customers’ orders, achieved timely delivery of properly constructed meals to customers
+									%li <p>Cooked and prepared food in a fast pace environment, assembled customers’ orders, achieved timely delivery of properly constructed meals to customers</p>
 							.span3
 								%small November 2006 – May 2007
 					
@@ -98,8 +98,8 @@
 								%h3 Bachelor of Applied Science, Honours Business Informatics
 								%h4 McMaster University, Hamilton, ON
 								%ul
-									%li Currently in level 3 of a unique 4 year program; studying Computer Science and Business
-									%li Registered in the Engineering Co-Op Program
+									%li <p>Currently in level 3 of a unique 4 year program; studying Computer Science and Business</p>
+									%li <p>Registered in the Engineering Co-Op Program</p>
 							.span3
 								%small Expected Completion April 2013
 						%hr
@@ -108,7 +108,7 @@
 								%h3 Ontario Secondary School Diploma (OSSD) - Gifted Program
 								%h4 Sinclair Secondary School, Whitby, ON
 								%ul
-									%li Honours Gr.9, Gr.10, Gr.11 – Maintained over 80% average
+									%li <p>Honours Gr.9, Gr.10, Gr.11 – Maintained over 80% average</p>
 							.span3
 								%small Completed June 2009
 					
@@ -118,10 +118,10 @@
 							.span9
 								%h3 Co-Founded a Web Startup Company – MealDeck.com
 								%ul
-									%li Assisted with design & development of web application
-									%li Designed logo and promotional material
-									%li Networked at several social events, promoted MealDeck
-									%li Presented MealDeck at Hamilton DemoCamp
+									%li <p>Assisted with design & development of web application</p>
+									%li <p>Designed logo and promotional material</p>
+									%li <p>Networked at several social events, promoted MealDeck</p>
+									%li <p>Presented MealDeck at Hamilton DemoCamp</p>
 							.span3
 								%small 2010 – Present
 						%hr
@@ -143,10 +143,10 @@
 							.span9
 								%h3 Member of McMaster Solar Car Team (Business Team)
 								%ul
-									%li Gathered information and researched parts (solar cells, motors, batteries)
-									%li Sourced out potential financial donators and contributors
-									%li Attended several public events with the business team, presented about the car and team
-									%li Revised team budget and finances with team leaders
+									%li <p>Gathered information and researched parts (solar cells, motors, batteries)</p>
+									%li <p>Sourced out potential financial donators and contributors</p>
+									%li <p>Attended several public events with the business team, presented about the car and team</p>
+									%li <p>Revised team budget and finances with team leaders</p>
 							.span3
 								%small 2009 – 2011
 						%hr
@@ -154,8 +154,8 @@
 							.span9
 								%h3 Avid musician and amateur recording engineer
 								%ul
-									%li Self-taught guitarist; practice and perform regularly
-									%li Learning to record, mix and master vocal and guitar tracks to create studio quality music
+									%li <p>Self-taught guitarist; practice and perform regularly</p>
+									%li <p>Learning to record, mix and master vocal and guitar tracks to create studio quality music</p>
 							.span3
 								%small 2006 – Present
 						%hr
@@ -163,8 +163,8 @@
 							.span9
 								%h3 Often work during summers at my father`s tire store, PTS Tires
 								%ul
-									%li Assisted clientele with tire advice and sales, in-person and by phone
-									%li Created customer invoices using QuickBooks
+									%li <p>Assisted clientele with tire advice and sales, in-person and by phone</p>
+									%li <p>Created customer invoices using QuickBooks</p>
 							.span3
 								%small 2005 – Present
 						%hr
@@ -172,20 +172,20 @@
 							.span9
 								%h3 Volunteer with the Whitby Youth Council
 								%ul
-									%li Worked with a team of high school students organizing and planning events
+									%li <p>Worked with a team of high school students organizing and planning events</p>
 									%ul
-										%li Eg. Whitby’s Annual Youth Fair (Job Fair)
-									%li Planned, designed and implemented local “Youth Rooms” throughout Whitby, which offered free public computer use, electronic and board games as well as information and advice
+										%li <p>Eg. Whitby’s Annual Youth Fair (Job Fair)</p>
+									%li <p>Planned, designed and implemented local “Youth Rooms” throughout Whitby, which offered free public computer use, electronic and board games as well as information and advice</p>
 							.span3
 								%small 2005 – 2007
 					
 					#interests.tab-pane
 						%h2.heading Interests
 						%ul
-							%li Startups, Technology, Silicon Valley
-							%li Music, Graphic Design, Gaming
-							%li Web development and Web Design
-							%li Regularly follow HackerNews, Engadget, Local/World News
+							%li <p>Startups, Technology, Silicon Valley</p>
+							%li <p>Music, Graphic Design, Gaming</p>
+							%li <p>Web development and Web Design</p>
+							%li <p>Regularly follow HackerNews, Engadget, Local/World News</p>
 					
 					#fact.tab-pane
 						%h2 Cool Fact

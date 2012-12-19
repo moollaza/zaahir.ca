@@ -7,7 +7,7 @@ function bars(){
 }
 
 function size(){
-  $("#index section").css("width", ($("#slider").width()/3) - 20);
+  // $("#index section").css("width", ($("#slider").width()/3) - 20);
 }
 
 $(document).ready(function() {
@@ -16,20 +16,21 @@ $(document).ready(function() {
   size();
 
   // Force media icons to appear in stacked row
-  var icon_width = $("#media_icons li a").outerWidth();
+  var icon_width = $("#media_icons li a img").width();
+  console.log("Width = " + icon_width)
   $("#media_icons").css("width", icon_width * 4 + (4 * 8));
 
   // Used to slide content sections horizontally
   $("#home_button").click(function() {
-    $("#slider").css("left", ( 0 ));
+    $("#inner").css("margin-left", ( 0 ));
   });  
 
   $("#contact_button").click(function() {
-    $("#slider").css("left", ( -100 + "%" ));
+    $("#inner").css("margin-left", ( -100 + "%" ));
   });
 
   $("#about_button").click(function() {
-    $("#slider").css("left", ( -200 + "%" ));
+    $("#inner").css("margin-left", ( -200 + "%" ));
   });
 
   /* For Portfolio Page */
@@ -43,6 +44,6 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    $content.css("left", ( 0 ) );
-    size();
+  $content.css("left", ( 0 ) );
+  size();
 });

@@ -24,6 +24,10 @@ body {
   overflow-y: scroll;
 }
 
+body div.container {
+  margin-bottom: 20px;
+}
+
 #name {
   font-size: 68.5px;
   line-height: 70px;
@@ -51,8 +55,13 @@ body {
   vertical-align: sub;
 }
 
-.content_container {
-  overflow: hidden;
+#tag a {
+  text-decoration: none;
+  color: #000;
+}
+
+#slider {
+  padding: 20px 10px 10px;
   border-top: 4px solid #CCC;
   border-bottom: 4px solid #CCC;
   border-style: double;
@@ -60,10 +69,14 @@ body {
   border-right: none;
 }
 
-#slider {
-  padding-top: 20px;
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+#inner {
   width: 300%;
-  position: relative;
+  margin-left: 0%;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -71,15 +84,9 @@ body {
   transition: all 1s;
 }
 
-.content {
-  display: inline-block;
-  height: 100%;
-
-}
-
-#index section {
-  height: 100%;
-  padding: 0 10px;
+#inner section {
+  float: left;
+  width: 33.3333%;
 }
 
 #media_icons {
@@ -110,7 +117,11 @@ body {
   display: inline-block;
 }
 
-#menu a {
+#menu {
+  margin: 20px 0;
+}
+
+#menu li {
   color: #000;
   font-weight: bold;
 }
@@ -118,7 +129,6 @@ body {
 footer {
   text-align: center;
   font-size: 10px;
-  margin-top: 40px;
 }
 
 /* ==========================================================================

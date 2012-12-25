@@ -1,18 +1,17 @@
 = partial :head
 
-%body
+%body.squished
+	= partial :header_nav
 	.container
-		= partial :header
 
 		#resume.row
 			%section.span12
-				%a#back.btn.btn-small.pull-right{:href => "/"} Back
-				%h1.page-header Resume
+				%h2.page-header Resume
 			
 			%section#profile.span12
 				.row
 					.span12
-						%h2.heading Profile
+						%h3.heading Profile
 						%p A 3rd year Business Informatics (CS & business) undergraduate, studying at McMaster University, located in Ontario, Canada.
 			%section.tabbable.span12
 				%ul.nav.nav-tabs.tabbed
@@ -31,103 +30,119 @@
 				
 				.tab-content
 					#experience.tab-pane.active
-						%h2.heading Experience
+						%h3.heading Experience
 						.row
 							.span9
-								%h3 Senior Web Developer (Summer Employment)
-								%h4 Quant Interpretations Inc., Hamilton, ON
+								%h4 Senior Web Developer (Summer Employment)
+								%h5 Quant Interpretations Inc., Hamilton, ON
 								%ul
-									%li <p>Overhauled the company’s web application (backend & frontend) transformed it into a visually appealing, more useful application which both clients and my employer thoroughly enjoyed</p>
-									%li <p>Implemented with PHP and the CodeIgniter framework, as well HTML5 and CSS3 improved the application’s overall design and function</p>
-									%li <p>Designed and implemented a small RESTful API allowing third party integration with the application</p>
+									%li 
+										%p Overhauled the company’s web application (backend & frontend) transformed it into a visually appealing, more useful application which both clients and my employer thoroughly enjoyed
+									%li 
+										%p Implemented with PHP and the CodeIgniter framework, as well HTML5 and CSS3 improved the application’s overall design and function
+									%li 
+										%p Designed and implemented a small RESTful API allowing third party integration with the application
 							.span3
 								%small May 2011 – September 2011
 						%hr
 							.row
 								.span9
-									%h3 Bachelor of Applied Science, Honours Business Informatics
-									%h4 McMaster University, Hamilton, ON
+									%h4 Bachelor of Applied Science, Honours Business Informatics
+									%h5 McMaster University, Hamilton, ON
 									%ul
-										%li <p>Currently in level 3 of a unique 4 year program; studying Computer Science and Business</p>
-										%li <p>Registered in the Engineering Co-Op Program</p>
+										%li 
+											%p Currently in level 3 of a unique 4 year program; studying Computer Science and Business
+										%li 
+											%p Registered in the Engineering Co-Op Program
 								.span3
 									%small Expected Completion April 2013
 						%hr
 						.row
 							.span9
-								%h3 Engineering Student (Co-Op)
-								%h4 General Motors Oshawa Truck Plant Paint Shop, Engineering Office
+								%h4 Engineering Student (Co-Op)
+								%h5 General Motors Oshawa Truck Plant Paint Shop, Engineering Office
 								%ul
-									%li <p>Collaborated with multiple engineers of different principles, analyzed their job requirements and entailments, gained knowledge of what engineers do and how they do it</p>
-									%li <p>Designed and developed an excel database, complete with an accompanying GUI as well as a macro to manage and organize it on a daily basis, improved ability to track work orders</p>
-									%li <p>Engineered a more efficient, ergonomic work bench for quality assurance personnel using Auto Cad, achieved a favourable design which reduced possibility of workplace injury</p>
+									%li 
+										%p Collaborated with multiple engineers of different principles, analyzed their job requirements and entailments, gained knowledge of what engineers do and how they do it
+									%li 
+										%p Designed and developed an excel database, complete with an accompanying GUI as well as a macro to manage and organize it on a daily basis, improved ability to track work orders
+									%li 
+										%p Engineered a more efficient, ergonomic work bench for quality assurance personnel using Auto Cad, achieved a favourable design which reduced possibility of workplace injury
 							.span3
 								%small September 2007 – January 2008
 						%hr
 						.row
 							.span9
-								%h3 Kitchen Staff Member
-								%h4 McDonald’s Restaurant, Whitby, ON
+								%h4 Kitchen Staff Member
+								%h5 McDonald’s Restaurant, Whitby, ON
 								%ul
-									%li <p>Cooked and prepared food in a fast pace environment, assembled customers’ orders, achieved timely delivery of properly constructed meals to customers</p>
+									%li 
+										%p Cooked and prepared food in a fast pace environment, assembled customers’ orders, achieved timely delivery of properly constructed meals to customers
 							.span3
 								%small November 2006 – May 2007
 					
 					#skills.tab-pane
-						%h2.heading Technical Skills
+						%h3.heading Technical Skills
 						.row
-							%h4.span3 Operating Systems:
-							%h5.span9 Windows, some LINUX and MacOS
+							%h5.span2 Operating Systems:
+							%h6.span10 Windows, some LINUX and MacOS
 						.row
-							%h4.span3 Web Development:
-							%h5.span9 PHP, HTML, CSS, SQL, JavaScript, AJAX, JQuery, MySQL, Apache
+							%h5.span2 Web Development:
+							%h6.span10 PHP, HTML, CSS, SQL, JavaScript, AJAX, JQuery, MySQL, Apache
 						.row
-							%h4.span3 Languages:
-							%h5.span9 Python, C++, Java, Haskell
+							%h5.span2 Languages:
+							%h6.span10 Python, C++, Java, Haskell
 						.row
-							%h4.span3 Software:
-							%h5.span9 Microsoft Office, Adobe Photoshop, Illustrator & Dreamweaver CS5
+							%h5.span2 Software:
+							%h6.span10 Microsoft Office, Adobe Photoshop, Illustrator & Dreamweaver CS5
 						.row
-							%h4.span3 Other
-							%h5.span9 LATEX, OpenGL, GLUT, ProTools, Cubase 5, VMware
+							%h5.span2 Other:
+							%h6.span10 LATEX, OpenGL, GLUT, ProTools, Cubase 5, VMware
 					
 					#education.tab-pane
-						%h2.heading Education
+						%h3.heading Education
 						.row
 							.span9
-								%h3 Bachelor of Applied Science, Honours Business Informatics
-								%h4 McMaster University, Hamilton, ON
+								%h4 Bachelor of Applied Science, Honours Business Informatics
+								%h5 McMaster University, Hamilton, ON
 								%ul
-									%li <p>Currently in level 3 of a unique 4 year program; studying Computer Science and Business</p>
-									%li <p>Registered in the Engineering Co-Op Program</p>
+									%li 
+										%p Currently in level 3 of a unique 4 year program; studying Computer Science and Business
+									%li 
+										%p Registered in the Engineering Co-Op Program
 							.span3
 								%small Expected Completion April 2013
 						%hr
 						.row
 							.span9
-								%h3 Ontario Secondary School Diploma (OSSD) - Gifted Program
-								%h4 Sinclair Secondary School, Whitby, ON
+								%h4 Ontario Secondary School Diploma (OSSD) - Gifted Program
+								%h5 Sinclair Secondary School, Whitby, ON
 								%ul
-									%li <p>Honours Gr.9, Gr.10, Gr.11 – Maintained over 80% average</p>
+									%li 
+										%p Honours Gr.9, Gr.10, Gr.11 – Maintained over 80% average
 							.span3
 								%small Completed June 2009
 					
 					#hobbies.tab-pane
-						%h2.heading Extracurriculars & Hobbies
+						%h3.heading Extracurriculars & Hobbies
 						.row
 							.span9
-								%h3 Co-Founded a Web Startup Company – MealDeck.com
+								%h4 Co-Founded a Web Startup Company – MealDeck.com
 								%ul
-									%li <p>Assisted with design & development of web application</p>
-									%li <p>Designed logo and promotional material</p>
-									%li <p>Networked at several social events, promoted MealDeck</p>
-									%li <p>Presented MealDeck at Hamilton DemoCamp</p>
+									%li 
+										%p Assisted with design & development of web application
+									%li 
+										%p Designed logo and promotional material
+									%li 
+										%p Networked at several social events, promoted MealDeck
+									%li 
+										%p Presented MealDeck at Hamilton DemoCamp
 							.span3
 								%small 2010 – Present
 						%hr
 						.row
 							.span9
-								%h3 Self-taught Web Developer and Web Designer
+								%h4 Self-taught Web Developer and Web Designer
 								%ul
 									%li
 										Developed my personal website, utilizing
@@ -141,54 +156,69 @@
 						%hr
 						.row
 							.span9
-								%h3 Member of McMaster Solar Car Team (Business Team)
+								%h4 Member of McMaster Solar Car Team (Business Team)
 								%ul
-									%li <p>Gathered information and researched parts (solar cells, motors, batteries)</p>
-									%li <p>Sourced out potential financial donators and contributors</p>
-									%li <p>Attended several public events with the business team, presented about the car and team</p>
-									%li <p>Revised team budget and finances with team leaders</p>
+									%li 
+										%p Gathered information and researched parts (solar cells, motors, batteries)
+									%li 
+										%p Sourced out potential financial donators and contributors
+									%li 
+										%p Attended several public events with the business team, presented about the car and team
+									%li 
+										%p Revised team budget and finances with team leaders
 							.span3
 								%small 2009 – 2011
 						%hr
 						.row
 							.span9
-								%h3 Avid musician and amateur recording engineer
+								%h4 Avid musician and amateur recording engineer
 								%ul
-									%li <p>Self-taught guitarist; practice and perform regularly</p>
-									%li <p>Learning to record, mix and master vocal and guitar tracks to create studio quality music</p>
+									%li 
+										%p Self-taught guitarist; practice and perform regularly
+									%li 
+										%p Learning to record, mix and master vocal and guitar tracks to create studio quality music
 							.span3
 								%small 2006 – Present
 						%hr
 						.row
 							.span9
-								%h3 Often work during summers at my father`s tire store, PTS Tires
+								%h4 Often work during summers at my father`s tire store, PTS Tires
 								%ul
-									%li <p>Assisted clientele with tire advice and sales, in-person and by phone</p>
-									%li <p>Created customer invoices using QuickBooks</p>
+									%li 
+										%p Assisted clientele with tire advice and sales, in-person and by phone
+									%li 
+										%p Created customer invoices using QuickBooks
 							.span3
 								%small 2005 – Present
 						%hr
 						.row
 							.span9
-								%h3 Volunteer with the Whitby Youth Council
+								%h4 Volunteer with the Whitby Youth Council
 								%ul
-									%li <p>Worked with a team of high school students organizing and planning events</p>
+									%li 
+										%p Worked with a team of high school students organizing and planning events
 									%ul
-										%li <p>Eg. Whitby’s Annual Youth Fair (Job Fair)</p>
-									%li <p>Planned, designed and implemented local “Youth Rooms” throughout Whitby, which offered free public computer use, electronic and board games as well as information and advice</p>
+										%li 
+											%p Eg. Whitby’s Annual Youth Fair (Job Fair)
+									%li 
+										%p Planned, designed and implemented local “Youth Rooms” throughout Whitby, which offered free public computer use, electronic and board games as well as information and advice
 							.span3
 								%small 2005 – 2007
 					
 					#interests.tab-pane
-						%h2.heading Interests
+						%h3.heading Interests
 						%ul
-							%li <p>Startups, Technology, Silicon Valley</p>
-							%li <p>Music, Graphic Design, Gaming</p>
-							%li <p>Web development and Web Design</p>
-							%li <p>Regularly follow HackerNews, Engadget, Local/World News</p>
+							%li 
+								%p Startups, Technology, Silicon Valley
+							%li 
+								%p Music, Graphic Design, Gaming
+							%li 
+								%p Web development and Web Design
+							%li 
+								%p Regularly follow HackerNews, Engadget, Local/World News
 					
 					#fact.tab-pane
-						%h2 Cool Fact
+						%h3 Cool Fact
 						%p
 							I once chased a purse snatcher from inside a grocery to the parking lot outside
 							%br He eventually gave up running; I apprehended him and was able to give the lady her purse back.

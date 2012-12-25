@@ -20,5 +20,5 @@ get '/resume' do
 end
 
 not_found do
-	haml :index
+	redirect '/'
 end

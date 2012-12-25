@@ -24,19 +24,34 @@ body {
   overflow-y: scroll;
 }
 
+body.squished {
+  margin: 0px 40px;
+}
+
 body div.container {
   margin-bottom: 20px;
+}
+
+nav div.container {
+  margin-bottom: 0px;
 }
 
 #name {
   font-size: 68.5px;
   line-height: 70px;
+}
+
+#name, .brand {
   font-family: "Segoe UI", Segoe, Tahoma, Geneva, sans-serif;
 }
 
 #tag_container { 
   margin: 20px auto 30px;
   position: relative;
+}
+
+#tag_container a:hover {
+  color: #999;
 }
 
 .line {
@@ -121,8 +136,11 @@ body div.container {
   margin: 20px 0;
 }
 
-#menu li {
+#menu li, #menu li a {
   color: #000;
+}
+
+#menu li {
   font-weight: bold;
 }
 
@@ -135,7 +153,7 @@ footer {
    RESUME STYLES
    ========================================================================== */
 
-#resume .span3, #resume .span1 {
+#resume .span3, #resume .span2, #resume .span1 {
   text-align: right;
 }
 
@@ -181,18 +199,6 @@ footer {
 /* ==========================================================================
    PORTFOLIO STYLES
    ========================================================================== */
-#title {
-  margin-top: 30px;
-  margin-bottom: 35px;
-  border-bottom: 1px solid #666;
-}
-
-#portfolio h1 {
-  font-family: 'AnonymousProBold';
-  font-size: 40px;
-  font-weight: bold;
-}
-
 #portfolio h4 {
   font-weight: bold;
 }
@@ -208,10 +214,6 @@ footer {
 
 #portfolio .carousel-inner {
   background-color: black;
-}
-
-.invisible {
-  visibility: hidden;
 }
 
 /* ==========================================================================

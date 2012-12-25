@@ -32,16 +32,8 @@ $(document).ready(function() {
     
   } else if ( $("#portfolio").length) {
     /* For Portfolio Page */
-    $('.carousel').carousel();
-    $('.prev').click(function() {
-      $('.carousel').carousel('prev');
-    });
-    $('.next').click(function() {
-      $('.carousel').carousel('next');
-    });  
-  }
-
-  
+    $('#carousel').carousel(); 
+  }  
 });
 
 $(window).resize(function() {

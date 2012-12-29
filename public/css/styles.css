@@ -15,12 +15,12 @@
 .absolute.pull-right { right: 0px; }
 
 /* ==========================================================================
-   LANDING STYLES
+   GENERAL STYLES
    ========================================================================== */
 
 body { 
   margin: 80px 40px 0;
-  font-family: Consolas, “Lucida Console”, Monaco, monospace;
+  font-family: "Segoe UI", Segoe, Tahoma, Geneva, sans-serif;
   overflow-y: scroll;
 }
 
@@ -28,21 +28,58 @@ body.squished {
   margin: 0px 40px;
 }
 
+body.squished .brand span{
+  color: #333;
+  font-weight: bold;
+}
+
+body.squished .brand small {
+  color: #999;
+  font-weight: normal;
+}
+
 body div.container {
   margin-bottom: 20px;
+}
+
+.navbar .navbar-inner {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid #bbb;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  text-shadow: none;
+}
+
+.nav-collapse .nav {
+  float: right;
+}
+
+/*Makes mobile menu display correctly*/
+.nav-collapse.in.collapse .nav {
+  float: none;
 }
 
 nav div.container {
   margin-bottom: 0px;
 }
 
+footer {
+  text-align: center;
+  font-size: 11px;
+}
+
+/* ==========================================================================
+   INDEX STYLES
+   ========================================================================== */
 #name {
   font-size: 68.5px;
   line-height: 70px;
-}
-
-#name, .brand {
-  font-family: "Segoe UI", Segoe, Tahoma, Geneva, sans-serif;
 }
 
 #tag_container { 
@@ -60,7 +97,8 @@ nav div.container {
 }
 
 #tag {
-  font-size: 20px; /*18.5px;*/
+  font-size: 20px;
+  font-family: Consolas, “Lucida Console”, Monaco, monospace;
   line-height: 20px;
 }
 
@@ -137,79 +175,32 @@ nav div.container {
 }
 
 #menu li, #menu li a {
-  color: #000;
-}
-
-#menu li {
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  font-size: 10px;
+  color: #333;
 }
 
 /* ==========================================================================
    RESUME STYLES
    ========================================================================== */
 
-#resume .span3, #resume .span2, #resume .span1 {
+.tab-content .span3 {
   text-align: right;
+  margin-top: 10px
 }
 
-#resume h4.span3 {
-  text-align: left;
-}
-
-#resume li {
-  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  margin-bottom: 8px;
-}
-
-#resume .tabbed {
-  margin-top: 20px;
-  padding-bottom: 0px;
-}
-
-#resume .tabbed li {
+.tabbable .nav {
   margin-bottom: 0;
-}
-
-#resume .tabbed li a:hover {
-  text-shadow: none;
-}
-
-#resume .tabbed .active a, #resume .tabbed .active a:hover {
-  color: #000;
-  text-shadow: none;
-}
-
-#resume #title {
-  margin-top: 30px;
-  margin-bottom: 35px;
-  border-bottom: 1px solid #DDD;
-}
-
-.specialfooter {
-  margin-top: 30px;
-  position: relative;
-  bottom: 0px;
 }
 
 /* ==========================================================================
    PORTFOLIO STYLES
    ========================================================================== */
-#portfolio h4 {
-  font-weight: bold;
+#portfolio {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #portfolio img {
   margin: 0 auto;
   max-height: 500px;
-}
-
-#portfolio .span1 {
-  text-align: right;
 }
 
 #portfolio .carousel-inner {
@@ -233,4 +224,7 @@ footer {
 @media (max-width: 767px) { }
 
 /* Landscape phones and down */
-@media (max-width: 480px) { }
+@media (max-width: 480px) { 
+  body, body.squished { margin: 0px; }
+  .tmi { display: none }
+}

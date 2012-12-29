@@ -37,5 +37,6 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-  $("content").css("left", ( 0 ) );
+  bars();
+  // $("content").css("left", ( 0 ) );
 });

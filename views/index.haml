@@ -8,10 +8,10 @@
 			#overflow
 				#inner
 					%section#home.text-centered
-						%h1 I'm Awesome :)
+						%h1 Welcome!
 
 					%section#contact.text-centered
-						%h1 Contact &amp; Connect...
+						%h1 Contact &amp; Connect
 						%ul#media_icons.nopadding
 							%li
 								%a{:href => "http://www.facebook.com/zmoolla"}
@@ -39,35 +39,30 @@
 									%img{:width => "64", :height => "64", :alt => "email", :src => "/img/social_media_icons/64x64/email.png"}
 
 					%section#about
-						%h1 About Me
-						%p
-							Hi, my name is Zaahir, nice to meet you! I'm currently an undergrad studying Business Informatics (Computer Science &amp; Business) at McMaster University in Hamilton, Ontario, Canada.
-							%br
-							%br
-							In my spare time, I love to sing &amp; play guitar as well as hack around, working on apps and my startup ideas.
-							%br
-							%br
+						%h1.page-header About Me
+						%p.lead	Hi. My name is Zaahir.
+						%p Currently I'm an undergrad studying Business Informatics (Computer Science &amp; Business) at McMaster University in Hamilton, Ontario, Canada.
+						%p.tmi In my spare time, I enjoy singing &amp; playing guitar as well as hacking around, working on apps and my startup ideas.
+						%p		
 							If you'd like to talk, feel free to send me an
-							= succeed "," do
-								%a{:href => "mailto:info@zaahir.ca"} email
+							%a{:href => "mailto:info@zaahir.ca"} email
 							you can also check out my
 							%a{:href => "/resume"} resume
 							and my
-							= succeed "." do
-								%a{:href => "/portfolio"} portfolio
+							%a{:href => "/portfolio"} portfolio
 
 		%nav#menu.text-centered
-			%ul.inline
-				%li#home_button.btn.btn-link HOME
+			%ul.inline.nomargin
+				%li#home_button.btn.btn-link Home
 				%li -
-				%li#contact_button.btn.btn-link CONTACT
+				%li#contact_button.btn.btn-link Contact
 				%li -
-				%li#about_button.btn.btn-link ABOUT
+				%li#about_button.btn.btn-link About
 			%ul.inline
 				%li
-					%a.nopadding.btn.btn-link{:href => "/resume"} RESUME
+					%a.nopadding.btn.btn-link{:href => "/resume"} Resume
 				%li -
 				%li
-					%a.nopadding.btn.btn-link{:href => "/portfolio"} PORTFOLIO
+					%a.nopadding.btn.btn-link{:href => "/portfolio"} Portfolio
 			
 	= partial :footer

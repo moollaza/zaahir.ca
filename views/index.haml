@@ -45,11 +45,9 @@
 						%p.tmi In my spare time, I enjoy singing &amp; playing guitar as well as hacking around, working on apps and my startup ideas.
 						%p		
 							If you'd like to talk, feel free to send me an
-							%a{:href => "mailto:info@zaahir.ca"} email
-							you can also check out my
-							%a{:href => "/resume"} resume
-							and my
-							%a{:href => "/portfolio"} portfolio
+							= succeed '.' do
+								%a{:href => "mailto:info@zaahir.ca"} email
+
 
 		%nav#menu.text-centered
 			%ul.inline.nomargin
@@ -60,7 +58,7 @@
 				%li#about_button.btn.btn-link About
 			%ul.inline
 				%li
-					%a.nopadding.btn.btn-link{:href => "/resume"} Resume
+					%a.nopadding.btn.btn-link{:href => "/resume"} R&eacute;sum&eacute;
 				%li -
 				%li
 					%a.nopadding.btn.btn-link{:href => "/portfolio"} Portfolio

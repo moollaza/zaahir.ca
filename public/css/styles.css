@@ -144,11 +144,11 @@ footer {
 
 #inner section {
   float: left;
-  width: 33.3333%;
+  width: 33.333334%;
 }
 
 #media_icons {
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 0;
 }
 
@@ -173,6 +173,10 @@ footer {
 #media_icons li {
   list-style-type: none;
   display: inline-block;
+}
+
+#about h1 {
+  margin-bottom: 20px;
 }
 
 #menu {
@@ -223,13 +227,24 @@ footer {
 @media (min-width: 1200px) { }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 9 8px) { }
+@media (min-width: 768px) and (max-width: 980px) { 
+  
+  body { margin: 10px 0; }
+  
+  body.squished { margin: 0px; }
+  
+  .tmi { display: none }
+}
  
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { }
+@media (max-width: 767px) {
+  
+  body, body.squished { margin: 0px; }
+  
+  .tmi { display: none; }
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) { 
-  body, body.squished { margin: 0px; }
-  .tmi { display: none }
+  .reallytmi { display: none; }
 }

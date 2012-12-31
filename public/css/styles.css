@@ -7,7 +7,6 @@
 .nomargin { margin: 0px; }
 .nopadding { padding: 0px; }
 .uppercase { text-transform: uppercase; }
-.inline-block { display: inline-block; }
 .full-with { width: 100%; }
 .text-centered { text-align: center; }
 .absolute { position: absolute; }
@@ -80,11 +79,16 @@ footer {
 #name {
   font-size: 68.5px;
   line-height: 70px;
+  display: inline-block;
 }
 
 #tag_container { 
   margin: 20px auto 30px;
   position: relative;
+}
+
+#tag_container div {
+  display: inline-block;
 }
 
 #tag_container a:hover {
@@ -100,6 +104,7 @@ footer {
   font-size: 20px;
   font-family: Consolas, “Lucida Console”, Monaco, monospace;
   line-height: 20px;
+  display: inline-block;
 }
 
 #tag span {

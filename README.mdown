@@ -12,14 +12,5 @@ This is the current code for my personal website, it was built using:
 
 *   [Sinatra](http://www.sinatrarb.com)
 *   [Bootstrap](http://twitter.github.com/bootstrap/)
-*   [Compass](http://compass-style.org)
 *   [HAML](http://twitter.github.com/bootstrap/)
-*   [SASS](http://sass-lang.com)
-*   [AWS] (http://aws.amazon.com/)
-*   Written using [Sublime Text Editor](http://www.sublimetext.com/)
-
-Also, feel free to try check it out on different devices or just
-resize the browser window. By utilizing bootstrap and @media selectors
-I've designed my website to (hopefully!) look great on any screen size!
-
-Thanks for stopping by!
+*   [Sublime Text Editor](http://www.sublimetext.com/)

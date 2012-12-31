@@ -4,15 +4,22 @@ Zaahir Moolla - Personal Website
 CS Undergrad, Nerd, Musician, Aspiring Entrepreneur
 ---------------------------------------------------
 
-Welcome to my GitHub, feel free to look around.
+[Pay me a visit!](http://zaahir.ca)
 
-This website was built using:
+Welcome to my GitHub, feel free to look around,
 
-*   [Sinatra](www.sinatrarb.com)
-*   [Bootstrap](twitter.github.com/bootstrap/)
-*   [Compass](compass-style.org)
-*   [HAML](twitter.github.com/bootstrap/)
-*   [SASS](sass-lang.com)
+This is the current code for my personal website, it was built using:
+
+*   [Sinatra](http://www.sinatrarb.com)
+*   [Bootstrap](http://twitter.github.com/bootstrap/)
+*   [Compass](http://compass-style.org)
+*   [HAML](http://twitter.github.com/bootstrap/)
+*   [SASS](http://sass-lang.com)
+*   [AWS] (http://aws.amazon.com/)
 *   Written using [Sublime Text Editor](http://www.sublimetext.com/)
+
+Also, feel free to try check it out on different devices or just
+resize the browser window. By utilizing bootstrap and @media selectors
+I've designed my website to (hopefully!) look great on any screen size!
 
 Thanks for stopping by!

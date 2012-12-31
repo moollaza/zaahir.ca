@@ -1,0 +1,66 @@
+= partial :head
+
+%body#index
+	.container
+		= partial :header
+
+		#slider
+			#overflow
+				#inner
+					%section#home.text-centered
+						%h1 Welcome!
+
+					%section#contact.text-centered
+						%h1 Contact &amp; Connect
+						%ul#media_icons.nopadding
+							%li
+								%a{:href => "http://www.facebook.com/zmoolla"}
+									%img{:width => "64", :height => "64", :alt => "Facebook", :src => "/img/social_media_icons/64x64/facebook.png"}
+							%li
+								%a{:href => "http://www.twitter.com/zmoolla"}
+									%img{:width => "64", :height => "64", :alt => "Twitter", :src => "/img/social_media_icons/64x64/twitter.png"}/
+							%li
+								%a{:href => "http://plus.google.com/105644640455090064317"}
+									%img{:width => "64", :height => "64", :alt => "GooglePlus", :src => "/img/social_media_icons/64x64/googleplus.png"}
+							%li
+								%a{:href => "http://www.linkedin.com/in/zmoolla"}
+									%img{:width => "64", :height => "64", :alt => "LinkedIn", :src => "/img/social_media_icons/64x64/linkedin.png"}
+							%li
+								%a{:href => "http://www.flickr.com/photos/zaahir"}
+									%img{:width => "64", :height => "64", :alt => "Flickr", :src => "/img/social_media_icons/64x64/flickr.png"}
+							%li
+								%a{:href => "http://www.youtube.com/Moollaman"}
+									%img{:width => "64", :height => "64", :alt => "Youtube", :src => "/img/social_media_icons/64x64/youtube.png"}
+							%li
+								%a{:href => "http://www.github.com/moollaza"}
+									%img{:width => "64", :height => "64", :alt => "Github", :src => "/img/social_media_icons/64x64/github.png"}
+							%li
+								%a{:href => "mailto:info@zaahir.ca"}
+									%img{:width => "64", :height => "64", :alt => "email", :src => "/img/social_media_icons/64x64/email.png"}
+
+					%section#about
+						%h1.page-header About Me
+						%p.lead	Hi. My name is Zaahir.
+						%p Currently I'm an undergrad studying Business Informatics (Computer Science &amp; Business) at McMaster University in Hamilton, Ontario, Canada.
+						%p.tmi In my spare time, I enjoy singing &amp; playing guitar as well as hacking around, working on apps and my startup ideas.
+						%p		
+							If you'd like to talk, feel free to send me an
+							= succeed '.' do
+								%a{:href => "mailto:info@zaahir.ca"} email
+
+
+		%nav#menu.text-centered
+			%ul.inline.nomargin
+				%li#home_button.btn.btn-link Home
+				%li -
+				%li#contact_button.btn.btn-link Contact
+				%li -
+				%li#about_button.btn.btn-link About
+			%ul.inline
+				%li
+					%a.nopadding.btn.btn-link{:href => "/resume"} R&eacute;sum&eacute;
+				%li -
+				%li
+					%a.nopadding.btn.btn-link{:href => "/portfolio"} Portfolio
+			
+	= partial :footer

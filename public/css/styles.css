@@ -191,6 +191,10 @@ footer {
    RESUME STYLES
    ========================================================================== */
 
+#resume .page-header a{
+  margin-top: 20px;
+}
+
 .tab-content .span3 {
   text-align: right;
   margin-top: 10px

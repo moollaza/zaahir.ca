@@ -10,33 +10,57 @@ $(document).ready(function() {
 
   bars();
 
-  if ( $("#home").length ) {
-
+  if ( $("#index").length ) {
     // Force media icons to appear in stacked row
     var icon_width = $("#media_icons li a img").width();
     $("#media_icons").css("width", (icon_width * 4) + (4 * 8));
 
     // Used to slide content sections horizontally
-    $("#home_button").click(function() {
-      $("#inner").css("margin-left", ( 0 ));
-    });  
+    $("#menu li button").click(function() {
 
-    $("#contact_button").click(function() {
-      $("#inner").css("margin-left", ( -100 + "%" ));
-    });
+      //Toggle active class
+      $("#menu li button.active").removeClass("active");
+      $(this).addClass("active");
 
-    $("#about_button").click(function() {
-      $("#inner").css("margin-left", ( -200 + "%" ));
-    });
-  } else if ( $("#resume").length) {
-    
-  } else if ( $("#portfolio").length) {
-    /* For Portfolio Page */
-    $('#carousel').carousel(); 
-  }  
+      // Slide content accordingly
+      switch ($(this).text()){
+        case "Home":
+          $("#inner").css("margin-left", ( 0 ));
+          break;
+        case "Contact":
+          $("#inner").css("margin-left", ( -100 + "%" ));
+          break;
+        case "About":
+          $("#inner").css("margin-left", ( -200 + "%" ));
+          break;
+      }
+    })
+  }
 });
 
 $(window).resize(function() {
   bars();
   // $("content").css("left", ( 0 ) );
 });
+
+    // // Used to slide content sections horizontally
+    // $("#home_button").click(function() {
+    //   $("#inner").css("margin-left", ( 0 ));
+    //   $("#home_button").addClass("active")
+    //   $("#contact_button").removeClass("active")
+    //   $("#about_button").removeClass("active")
+    // });  
+
+    // $("#contact_button").click(function() {
+    //   $("#inner").css("margin-left", ( -100 + "%" ));
+    //   $("#contact_button").addClass("active")
+    //   $("#home_button").removeClass("active")
+    //   $("#about_button").removeClass("active")
+    // });
+
+    // $("#about_button").click(function() {
+    //   $("#inner").css("margin-left", ( -200 + "%" ));
+    //   $("#about_button").addClass("active")
+    //   $("#contact_button").removeClass("active")
+    //   $("#home_button").removeClass("active")
+    // });

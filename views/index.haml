@@ -40,7 +40,10 @@
 
 					%section#about
 						%h1 About Me
-						%p.lead	Hi. My name is Zaahir.
+						%p.lead	
+							Hi. My name is Zaahir. I'm an intern at
+							= succeed "." do
+								%a{:href => "https://duckduckgo.com"} DuckDuckGo
 						%p
 							Currently I'm an undergrad, studying Business Informatics
 							%span.tmi (Computer Science &amp; Business)

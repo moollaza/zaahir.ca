@@ -22,7 +22,6 @@ end
 
 get '/' do
   @title = "Zaahir.ca - Personal Website of Zaahir Moolla {Hacker, Nerd &amp; Musician}  - Home"
-
   haml :index
 end
 
@@ -34,6 +33,10 @@ end
 get '/resume' do
 	@title = "Zaahir.ca - Personal Website of Zaahir Moolla {Hacker, Nerd &amp; Musician} - Resume"
 	haml :resume
+end
+
+get '/blog' do
+	redirect "http://blog.zaahir.ca"
 end
 
 not_found do

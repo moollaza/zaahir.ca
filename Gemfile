@@ -15,5 +15,5 @@ end
 group :production do
   gem 'foreman'
   gem 'unicorn'
-  gem 'newrelic'
+  gem 'newrelic_rpm'
 end

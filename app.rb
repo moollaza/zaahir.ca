@@ -1,6 +1,7 @@
 require 'bundler/setup'
 require 'rubygems'
 require 'sinatra'
+require 'newrelic_rpm'
 require 'sinatra/partial'
 require 'haml'
 require './config'

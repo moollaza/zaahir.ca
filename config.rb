@@ -8,6 +8,10 @@ configure :development do
   puts "OKAY...I'm Reloaded!"
 end
 
+configure :production do
+  require 'newrelic_rpm'
+end
+
 # Setup Templates
 configure do
 

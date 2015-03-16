@@ -5,12 +5,12 @@
 	.container
 
 		#resume
-			%h2.page-header 
+			%h2.page-header
 				R&eacute;sum&eacute;
 				%small
 					%a.pull-right.muted{:href => "/docs/Zaahir_Moolla_Resume_Jan_2013.pdf"}
 						%img{:src => "/img/pdf_icon.png"}
-			
+
 			.tabbable
 				%ul.nav.nav-tabs.tabbed
 					%li.active
@@ -25,27 +25,38 @@
 						%a{"data-toggle" => "tab", :href => "#interests"} Interests
 					%li
 						%a{"data-toggle" => "tab", :href => "#fact"} Cool Fact
-				
+
 				.tab-content
 					#experience.tab-pane.active
 						.row
 							%h3.span12 Experience
 							.span12
 								%h4
+									Project Manager (DuckDuckHack)
+									%small.pull-right January 2015 - Present
+							.span12
+								%h5 DuckDuckGo, Pennsylvania, US (remote)
+
+								%ul
+									%li Manage, moderate and improve open-source code on Github (JavaScript, Perl, HTML, CSS)
+									%li Maintain the DuckPAN developer tool (Perl)
+								%hr
+							.span12
+								%h4
 									Sofware Intern
 									%small.pull-right May 2012 – September 2012
-							.span12	
+							.span12
 								%h5 DuckDuckGo, Pennsylvania, US
-									
+
 								%ul
-									%li Managed, moderated and contributed to open-source code on Github (HTML, Javascript, Perl)
+									%li Managed, moderated and contributed to open-source code on Github (HTML, JavaScript, Perl)
 									%li Improved DuckPAN user testing platform (Perl)
 								%hr
 							.span12
 								%h4
 									Senior Web Developer
 									%small.pull-right May 2011 – September 2011
-							.span12	
+							.span12
 								%h5 Quant Interpretations Inc., Hamilton, ON
 								%ul
 									%li Overhauled the company’s web application, on both the backend &amp; frontend
@@ -56,7 +67,7 @@
 								%h4
 									Engineering Student (Co-Op)
 									%small.pull-right September 2007 – January 2008
-							.span12	
+							.span12
 								%h5 General Motors Oshawa Truck Plant Paint Shop, Engineering Office
 								%ul
 									%li Collaborated with multiple engineers, analyzed their roles, learned what engineers do and how they do it
@@ -70,16 +81,16 @@
 								%dl.dl-horizontal
 									%dt Operating Systems:
 									%dd Windows, Linux(Ubuntu) and MacOS
-								
+
 									%dt Web Development:
-									%dd HTML, CSS, Javascript, HAML, SASS, LESS, GIT, Bootstrap, Sinatra
-								
+									%dd HTML, CSS, JavaScript, HAML, SASS, LESS, GIT, Bootstrap, Sinatra
+
 									%dt Languages:
 									%dd Python, Ruby, Perl, C++
-								
+
 									%dt Software:
 									%dd MS Office, Adobe Photoshop, Illustrator &amp; Dreamweaver
-								
+
 									%dt Other:
 									%dd Heroku, LATEX, OpenGL, VMware
 
@@ -90,7 +101,7 @@
 								%h4
 									Bachelor of Applied Science, Honours Business Informatics
 									%small.pull-right Expected April 2014
-							.span12	
+							.span12
 								%h5 McMaster University, Hamilton, ON
 								%ul
 									%li Currently in level 4 of a unique 4 year program; studying Computer Science and Business
@@ -100,14 +111,14 @@
 								%h4
 									Ontario Secondary School Diploma (OSSD) - Gifted Program
 									%small.pull-right Completed June 2009
-							.span12		
+							.span12
 								%h5 Sinclair Secondary School, Whitby, ON
 								%ul
 									%li Honours Gr.9, Gr.10, Gr.11 – Maintained over 80% average
 
 					#hobbies.tab-pane
 						.row
-							%h3.span12 
+							%h3.span12
 								Spare Time
 								%small Extracurriculars &amp; Hobbies
 							.span12
@@ -162,12 +173,12 @@
 									%li Music, Graphic Design, Gaming
 									%li Web development and Web Design
 									%li HackerNews, Quora, StackOverflow
-						
+
 					#fact.tab-pane
 						.row
 							.span12
 								%h3 Cool Fact
 								%p I once chased a purse snatcher from inside a grocery to the parking lot outside. He gave up running and I managed to get the purse back.
 								%hr
-	
+
 	= partial :footer

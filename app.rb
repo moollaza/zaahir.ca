@@ -1,3 +1,4 @@
+require 'bundler/setup'
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/partial'
@@ -5,14 +6,14 @@ require 'haml'
 require './config'
 
 before do
-	
+
 	# Create request object and get user agent
 	req = Rack::Request.new(env)
 	user_agent = req.user_agent()
-	
+
 	# Set social icon size based on user agent
 	@image_size = 64
-	case 
+	case
 		when user_agent.match(/ipad|playbook|nexus 7|nexus 10|tablet/i)
 				@image_size = 48
 		when user_agent.match(/iphone|android|blackberry/i)

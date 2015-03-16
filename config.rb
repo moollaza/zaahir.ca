@@ -5,13 +5,13 @@ puts "RACK_ENV: " + ENV['RACK_ENV']
 # Setup Sinatra-Reloader
 configure :development do
   require 'sinatra/reloader'
-  puts "Alright. We're Reloaded. Bitches!"
+  puts "OKAY...I'm Reloaded!"
 end
 
 # Setup Templates
-configure do  
-  
+configure do
+
   set :partial_template_engine, :haml
   enable :partial_underscores
-  
+
 end

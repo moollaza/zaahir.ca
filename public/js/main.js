@@ -1,66 +1,51 @@
-// Setup Gray Bars and their width/height/offset
-function bars(){
-  $("#tag_container").width(($("#name").width()));
-  $("header .line").width((($("#name").width() - $("#tag").width())/2) - 2);
-  var top_offset = $("#tag_container").outerHeight()/2 - $(".line").height()/2 + 1;
-  $(".line").css("top", top_offset + "px");
-}
-
 $(document).ready(function() {
 
-  bars();
 
-  if ( $("#index").length ) {
-    // Force media icons to appear in stacked row
-    var icon_width = $("#media_icons li a img").width();
-    $("#media_icons").css("width", (icon_width * 4) + (4 * 8));
+    /* Scroll more info button to about page */
+    $('.more-info').click(function() {
+        $.fn.fullpage.moveTo('page-profile');
+    });
 
-    // Used to slide content sections horizontally
-    $("#menu li button").click(function() {
+    /* For Bootstrap current state on portfolio sorting */
 
-      //Toggle active class
-      $("#menu li button.active").removeClass("active");
-      $(this).addClass("active");
-
-      // Slide content accordingly
-      switch ($(this).text()){
-        case "Home":
-          $("#inner").css("margin-left", ( 0 ));
-          break;
-        case "Contact":
-          $("#inner").css("margin-left", ( -100 + "%" ));
-          break;
-        case "About":
-          $("#inner").css("margin-left", ( -200 + "%" ));
-          break;
-      }
+    $('ul.nav-pills li a').click(function(e) {
+        $('ul.nav-pills li.active').removeClass('active')
+        $(this).parent('li').addClass('active')
     })
-  }
+
+    $('#fullpage').fullpage({
+        //Navigation
+        menu: '#main-menu',
+        anchors:['page-welcome', 'page-profile', 'page-contact', 'page-end'],
+
+        //Scrolling
+        scrollBar: true,
+        // autoScrolling: false,
+
+        //Design
+        fixedElements: '#top-navigation',
+        // paddingBottom: "0px"
+
+        afterRender: function(){
+
+            /* VEGAS Home Slider */
+            var $welcome = $('#welcome-slider');
+            $welcome.vegas({
+                slides: [
+                    { src: 'img/slider/hairpin.jpg' },
+                    { src: 'img/slider/water.jpg'   },
+                    { src: 'img/slider/record.jpg'  }
+                ],
+                overlay: '/img/overlays/06.png'
+            });
+
+            $("#vegas-next").click(function() {
+                $welcome.vegas('next');
+            });
+
+            $("#vegas-prev").click(function() {
+               $welcome.vegas('previous');
+            });
+        }
+    });
 });
-
-$(window).resize(function() {
-  bars();
-  // $("content").css("left", ( 0 ) );
-});
-
-    // // Used to slide content sections horizontally
-    // $("#home_button").click(function() {
-    //   $("#inner").css("margin-left", ( 0 ));
-    //   $("#home_button").addClass("active")
-    //   $("#contact_button").removeClass("active")
-    //   $("#about_button").removeClass("active")
-    // });  
-
-    // $("#contact_button").click(function() {
-    //   $("#inner").css("margin-left", ( -100 + "%" ));
-    //   $("#contact_button").addClass("active")
-    //   $("#home_button").removeClass("active")
-    //   $("#about_button").removeClass("active")
-    // });
-
-    // $("#about_button").click(function() {
-    //   $("#inner").css("margin-left", ( -200 + "%" ));
-    //   $("#about_button").addClass("active")
-    //   $("#contact_button").removeClass("active")
-    //   $("#home_button").removeClass("active")
-    // });

@@ -1,0 +1,5 @@
+# Zaahir Moolla - Hacker, Nerd & Musician
+
+This is a code for my personal website. You can pay me a visit at http://zaahir.ca
+
+To run locally `nf start` -- this uses the npm [foreman](https://www.npmjs.com/package/foreman) package. It loads the local .env which sets DEBUG

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Zaahir.ca - Uh Oh!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/colors/red.css">
+
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="js/plugins/html5shiv.js"></script>
+          <script src="js/plugins/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body style="padding-top: 70px">
+
+        {% include "navigation.html" %}
+
+        <div class="container text-center clearfix">
+            <h1>404</h1>
+            <h2>Uh oh! Something isn't quite right...</h2>
+            <p>Use the navigation above to get back home!</p>
+            <pre>{{ error.stack }}</pre>
+        </div>
+    </body>
+<html>

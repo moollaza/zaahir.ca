@@ -7,7 +7,7 @@ Base styles
 ========================================================================== */
 
 html, body {
-    font-family: source-sans-pro, Helvetica, Arial, sans-serif;
+    font-family: "source-sans-pro", Helvetica, Arial, sans-serif;
     color: #757575;
 }
 
@@ -30,7 +30,7 @@ a img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: open-sans, sans-serif;
+    font-family: "open-sans", sans-serif;
     font-weight: 700;
 }
 
@@ -76,11 +76,6 @@ Navigation
     background: none;
 }
 
-.navbar-collapse {
-    background-color: rgba(50, 50, 50, 0.05) !important;
-    border-bottom: 1px solid rgba(85, 85, 85, 0.5);
-}
-
 /* ==========================================================================
 Layout
 ========================================================================== */
@@ -89,9 +84,13 @@ Layout
     text-align: center;
 }
 
+.page-welcome .container {
+    margin-top: 55px;
+}
+
 .page-welcome header {
     color: #fff;
-    padding-top: 20%;
+    padding-top: 45%;
     text-shadow: 0px 1px 1px #000;
 }
 
@@ -116,7 +115,7 @@ Layout
 }
 
 .page-welcome header .aka {
-    font-family: bitter, serif;
+    font-family: "bitter", serif;
     font-size: 1.5em;
     margin: 0;
     padding-top: .75em;
@@ -134,11 +133,6 @@ Layout
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-.page-welcome .container {
-    position: relative;
-    top: 25%;
 }
 
 .page-profile {
@@ -165,6 +159,11 @@ Layout
 
 .page-contact .contact-info a {
     color: #FFF;
+}
+
+.page-profile .section-subtitle,
+.page-contact .section-subtitle {
+    margin: 0;
 }
 
 .page-end {
@@ -310,6 +309,10 @@ Dividers
     width: 1.5em;
 }
 
+.section-subtitle p {
+    margin: 0;
+}
+
 /* ==========================================================================
 Social Icons & Buttons
 ========================================================================== */
@@ -426,7 +429,7 @@ Helper classes
 .centered {
     margin-left: auto;
     margin-right: auto;
-    float: none;
+    float: none;``
 }
 
 
@@ -436,12 +439,49 @@ Responsive Settings
 
 @media(max-width: 992px) {
 
+    .page-welcome header {
+        padding-top: 25%;
+    }
+
+    .navbar-collapse.in {
+        background-color: rgba(50, 50, 50, 0.05) !important;
+        border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+    }
+
     .page-profile .profile-photo {
         margin: 0 auto 20px;
     }
 }
 
-@media  (max-width: 479px) {
+/* Landscape */
+@media(max-device-width: 736px) and (orientation: landscape) {
+
+    .page-welcome header {
+        padding-top: 10%;
+    }
+
+    .page-welcome header .name {
+        font-size: 1.8em;
+    }
+
+    .section-title {
+        font-size: 1.4em;
+    }
+
+    .section-header p {
+        font-size: 1.1em;
+    }
+
+    .page-profile .profile-photo {
+        display: none;
+    }
+
+    .btn-round img {
+        height: 50px;
+    }
+}
+
+@media(max-width: 479px) {
 
     .page-welcome header .name {
         font-size: 2em;
@@ -460,12 +500,13 @@ Responsive Settings
         font-size: 1.2em;
     }
 
-    .page-skills {
-        text-align: center;
+    .page-profile .profile-photo {
+        margin: 0 auto 20px;
     }
 
     .page-profile .profile-photo {
-        margin: 0 auto 20px;
+        width: 130px;
+        height: 130px;
     }
 
     .btn-round img {

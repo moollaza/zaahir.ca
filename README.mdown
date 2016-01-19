@@ -1,5 +1,16 @@
-# Zaahir Moolla - Hacker, Nerd & Musician
+# Zaahir Moolla - DuckDuckHacker, Nerd & Musician
 
-This is a code for my personal website. You can pay me a visit at http://zaahir.ca
+This is my personal website. You can pay me a visit at https://zaahir.ca
 
-To run locally `nf start` -- this uses the npm [foreman](https://www.npmjs.com/package/foreman) package. It loads the local .env which sets DEBUG
+- Theme mostly borrowed from https://wrapbootstrap.com/theme/articulate-resume-portfolio-WB0N5LC7P
+
+- Icons by [icons8](https://icons8.com)
+
+- Built with:
+  - Atom
+  - Node + Express.js
+  - Heroku
+  - CloudFlare
+  - Amazon S3 + CloudFront
+  - CDNJS
+  - Yeah, it's overkill. ¯\_(ツ)_/¯

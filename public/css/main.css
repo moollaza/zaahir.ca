@@ -76,6 +76,11 @@ Navigation
     background: none;
 }
 
+.navbar-collapse {
+    background-color: rgba(50, 50, 50, 0.05) !important;
+    border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+}
+
 /* ==========================================================================
 Layout
 ========================================================================== */
@@ -131,6 +136,11 @@ Layout
     background-size: cover;
 }
 
+.page-welcome .container {
+    position: relative;
+    top: 25%;
+}
+
 .page-profile {
     background: #fff;
 }
@@ -170,6 +180,15 @@ Layout
     color: #ccc;
 }
 
+.footer a.no-color {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer a.no-color:hover {
+    color: #eee;
+}
+
 /* ==========================================================================
 Vegas slider
 ========================================================================== */
@@ -178,7 +197,7 @@ Vegas slider
     border-radius: 10px;
     background: #000;
     background: rgba(0, 0, 0, 0.7);
-    background: url(../img/loading.gif) no-repeat center center;
+    background: url(//assets.zaahir.ca/img/loading.gif) no-repeat center center;
     height: 32px;
     left: 20px;
     position: fixed;
@@ -228,21 +247,21 @@ Vegas slider
 .slider-controls li a {
     position: absolute;
     z-index: 10;
-    top: 40%;
+    top: 55%;
     width: 60px;
     height: 60px;
     cursor: pointer;
 }
 
 .next {
-    background: url("../img/next.png");
+    background: url("//assets.zaahir.ca/img/next.png");
     margin-right: 70px;
     right: 0;
     opacity: 0.3;
 }
 
 .prev {
-    background: url("../img/prev.png");
+    background: url("//assets.zaahir.ca/img/prev.png");
     margin-left: 70px;
     left: 0;
     opacity: 0.3;

@@ -9,9 +9,9 @@ $(document).ready(function() {
     /* For Bootstrap current state on portfolio sorting */
 
     $('ul.nav-pills li a').click(function(e) {
-        $('ul.nav-pills li.active').removeClass('active')
-        $(this).parent('li').addClass('active')
-    })
+        $('ul.nav-pills li.active').removeClass('active');
+        $(this).parent('li').addClass('active');
+    });
 
     $('#fullpage').fullpage({
         //Navigation
@@ -20,11 +20,6 @@ $(document).ready(function() {
 
         //Scrolling
         scrollBar: true,
-        // autoScrolling: false,
-
-        //Design
-        fixedElements: '#top-navigation',
-        // paddingBottom: "0px"
 
         afterRender: function(){
 
@@ -34,9 +29,11 @@ $(document).ready(function() {
                 slides: [
                     { src: 'img/slider/hairpin.jpg' },
                     { src: 'img/slider/water.jpg'   },
-                    { src: 'img/slider/record.jpg'  }
+                    { src: 'img/slider/hotel-pool.jpg'  },
+                    { src: 'img/slider/record-player.jpg'  }
                 ],
-                overlay: '/img/overlays/06.png'
+                overlay: '/img/overlays/06.png',
+                timer: false
             });
 
             $("#vegas-next").click(function() {

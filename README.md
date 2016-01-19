@@ -13,4 +13,4 @@ This is my personal website. You can pay me a visit at https://zaahir.ca
   - CloudFlare
   - Amazon S3 + CloudFront
   - CDNJS
-  - Yeah, it's overkill. ¯\_(ツ)_/¯
+  - Yeah, it's overkill. ¯\\_(ツ)_/¯

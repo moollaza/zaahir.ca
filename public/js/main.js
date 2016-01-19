@@ -27,12 +27,12 @@ $(document).ready(function() {
             var $welcome = $('#welcome-slider');
             $welcome.vegas({
                 slides: [
-                    { src: 'img/slider/hairpin.jpg' },
-                    { src: 'img/slider/water.jpg'   },
-                    { src: 'img/slider/hotel-pool.jpg'  },
-                    { src: 'img/slider/record-player.jpg'  }
+                    { src: '//assets.zaahir.ca/img/slider/hairpin.jpg' },
+                    { src: '//assets.zaahir.ca/img/slider/water.jpg'   },
+                    { src: '//assets.zaahir.ca/img/slider/hotel-pool.jpg'  },
+                    { src: '//assets.zaahir.ca/img/slider/record-player.jpg'  }
                 ],
-                overlay: '/img/overlays/06.png',
+                overlay: '//assets.zaahir.ca/img/overlays/06.png',
                 timer: false
             });
 

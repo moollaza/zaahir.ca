@@ -60,6 +60,7 @@ export default {
   right: 0;
   width: 100vw;
   height: 100vh;
+  z-index: -2;
 
   &__image {
     width: 100%;
@@ -69,7 +70,7 @@ export default {
     background-size: cover;
     opacity: 0;
     visibility: hidden;
-    transition: all 1000ms ease 0s;
+    transition: all 2000ms ease 0s;
   }
 
   &__overlay {
@@ -84,6 +85,7 @@ export default {
     flex-direction: column;
     color: white;
     background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
 
     h1,
     h2 {

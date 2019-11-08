@@ -1,7 +1,7 @@
 <template>
-  <b-container class="about text-center">
+  <div class="about text-center">
     I like movies, games, and technology
-  </b-container>
+  </div>
 </template>
 
 <script>

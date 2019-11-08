@@ -7,7 +7,7 @@
         class="carousel__image"
         :class="{ active: currentNumber === index }"
         v-bind:style="{
-          backgroundImage: `url('https://assets.zaahir.ca/img/slider/${image}.jpg')`
+          backgroundImage: `url('/carousel/${image}.jpg')`
         }"
       ></div>
     </div>

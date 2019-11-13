@@ -7,5 +7,10 @@
 </style>
 
 <div class="home">
-  <Carousel />
+  <Carousel>
+    <h1 slot="header">ZAAHIR MOOLLA</h1>
+    <h2 slot="subtitle">
+      <i>moollaza</i>
+    </h2>
+  </Carousel>
 </div>

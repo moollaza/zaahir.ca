@@ -1,7 +1,19 @@
 <svelte:head>
-	<title>About</title>
+  <title>About</title>
 </svelte:head>
 
-<h1>About this site</h1>
+<section>
+  <h1>About Me</h1>
 
-<p>This is the 'about' page. There's not much here.</p>
+  <span class="spacer" />
+
+  <p>
+    Hi. My name is Zaahir.
+    <br />
+    I'm a frontend developer at
+    <a href="https://duckduckgo.com">DuckDuckGo</a>
+    .
+    <br />
+    I like technology, music, and movies.
+  </p>
+</section>

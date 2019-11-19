@@ -25,7 +25,9 @@
     <body>
         <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-        <div id='sapper'>%sapper.html%</div>
+        <div id='sapper' class="flex flex-col h-screen w-screen items-stretch">
+            %sapper.html%
+        </div>
 
         <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and

@@ -4,12 +4,14 @@
 
 /* BASE STYLES */
 html {
-    @apply antialiased text-center;
+    @apply antialiased text-center text-base text-gray-500;
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* For About, Contact */
 section {
+    @apply px-4;
+
     h1 {
         @apply m-auto text-5xl text-gray-800 font-bold uppercase;
     }
@@ -21,7 +23,7 @@ section {
     }
 
     p {
-        @apply text-2xl text-gray-600 pb-4;
+        @apply text-gray-700;
 
         a {
             @apply text-orange-500;

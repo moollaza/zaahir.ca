@@ -1,6 +1,5 @@
 <style>
   img {
-    width: 75px;
     filter: grayscale(100%);
   }
   img:hover {
@@ -24,16 +23,16 @@
 
   <span class="spacer" />
 
-  <p>Send me an email, or find me online</p>
+  <p class="md:text-xl pb-6 md:pb-4">Send me an email, or find me online.</p>
 
-  <p>
-    <a href="mailto:info@zaahir.ca" class="hvr-float">
+  <p class="flex w-full sm:w-auto flex-no-wrap justify-center">
+    <a href="mailto:info@zaahir.ca" class="hvr-float w-10 md:w-16">
       <img src="/icons/email.png" alt="at symbol" />
     </a>
-    <a href="https://twitter.com/zmoolla" class="hvr-float">
+    <a href="https://twitter.com/zmoolla" class="hvr-float w-10 md:w-16">
       <img src="/icons/twitter.png" alt="Twitter logo" />
     </a>
-    <a href="https://github.com/moollaza" class="hvr-float">
+    <a href="https://github.com/moollaza" class="hvr-float w-10 md:w-16">
       <img src="/icons/github.png" alt="GitHub logo" />
     </a>
   </p>

@@ -57,7 +57,7 @@
   /* purgecss end ignore */
 </style>
 
-<div class="carousel-wrap">
+<div class="w-full h-full relative">
   <div class="carousel absolute inset-0">
     {#each images as image, i}
       <div

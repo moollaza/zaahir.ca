@@ -27,33 +27,34 @@
 <style>
   .carousel {
     z-index: -2;
+  }
 
-    &__image {
-      transition: all 2000ms ease 0s;
-    }
+  /* purgecss start ignore */
+  .carousel-image {
+    transition: all 2000ms ease 0s;
+  }
 
-    &__overlay {
-      background: rgba(0, 0, 0, 0.1);
-      z-index: -1;
+  .carousel-overlay {
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
 
-      h1,
-      h2 {
-        text-shadow: 0px 2px 3px black;
-      }
+  .carousel-title,
+  .carousel-subtitle {
+    text-shadow: 0px 2px 3px black;
+  }
 
-      h1 {
-        font-weight: 700;
-      }
-
-      h2 {
-        font-weight: 600;
-      }
-    }
+  .carousel-title {
+    font-weight: 700;
+  }
+  .carousel-subtitle {
+    font-weight: 600;
   }
 
   .active {
     @apply visible opacity-100;
   }
+  /* purgecss end ignore */
 </style>
 
 <div class="carousel-wrap">
@@ -61,16 +62,22 @@
     {#each images as image, i}
       <div
         class:active={currentNumber === i}
-        class="carousel__image absolute inset-0 opacity-0 invisible bg-center
+        class="carousel-image absolute inset-0 opacity-0 invisible bg-center
         bg-cover bg-no-repeat"
         style="background-image: url('/carousel/{image}.jpg')" />
     {/each}
   </div>
 
   <div
-    class="carousel__overlay absolute inset-0 flex flex-col justify-center
+    class="carousel-overlay absolute inset-0 flex flex-col justify-center
     items-center text-white">
-    <slot name="title" class="text-6xl" />
-    <slot name="subtitle" class="text-4xl" />
+    <h1 class="carousel-title text-6xl">
+      <slot name="title" />
+    </h1>
+    <h2 class="carousel-subtitle text-4xl">
+      <i>
+        <slot name="subtitle" />
+      </i>
+    </h2>
   </div>
 </div>

@@ -3,14 +3,15 @@
 </script>
 
 <style>
-
+  h1,
+  h2 {
+    /* text-shadow: 0px 1px 1px #000; */
+  }
 </style>
 
-<div class="home">
+<div class="home w-full h-full relative">
   <Carousel>
-    <h1 slot="header">ZAAHIR MOOLLA</h1>
-    <h2 slot="subtitle">
-      <i>moollaza</i>
-    </h2>
+    <span slot="title" class="text-6xl">ZAAHIR MOOLLA</span>
+    <span slot="subtitle" class="text-4xl">(a.k.a. moollaza)</span>
   </Carousel>
 </div>

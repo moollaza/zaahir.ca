@@ -16,9 +16,21 @@
       @apply text-orange-600;
     }
   }
+
+  a:hover {
+    animation: colourize 0.3s linear forwards;
+    animation-iteration-count: 1;
+  }
+
+  @keyframes colourize {
+    to {
+      /* filter: grayscale(0%); */
+      @apply text-orange-600;
+    }
+  }
 </style>
 
-<nav class="flex items-center justify-center flex-wrap bg-gray-500 p-4">
+<nav class="flex items-center justify-center flex-wrap bg-gray-500 p-4 shadow">
   <div class="block ml-auto md:hidden">
     <button
       class="flex items-center px-3 py-2 border rounded text-orange-500
@@ -39,21 +51,21 @@
     class="w-full block md:flex md:items-center md:w-auto">
     <div class="text-center">
       <a
-        class="block mt-4 hover:text-orange-600 md:inline-block md:mt-0 md:w-20"
+        class="block mt-4 md:inline-block md:mt-0 md:w-20"
         class:selected={segment === undefined}
         href="."
         rel="prefetch">
         Home
       </a>
       <a
-        class="block mt-4 hover:text-orange-600 md:inline-block md:mt-0 md:w-20"
+        class="block mt-4 md:inline-block md:mt-0 md:w-20"
         class:selected={segment === 'about'}
         href="/about"
         rel="prefetch">
         About
       </a>
       <a
-        class="block mt-4 hover:text-orange-600 md:inline-block md:mt-0 md:w-20"
+        class="block mt-4 md:inline-block md:mt-0 md:w-20"
         class:selected={segment === 'contact'}
         href="/contact"
         rel="prefetch">

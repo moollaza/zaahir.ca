@@ -9,3 +9,4 @@ The design was mostly borrowed from https://wrapbootstrap.com/theme/articulate-r
   - [Tailwindcss](https://tailwindcss.com)
   - [icons8](https://icons8.com)
   - [Now](https://zeit.co/home)
+  - [Fathom Analytics](https://usefathom.com/)

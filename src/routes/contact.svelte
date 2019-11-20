@@ -15,7 +15,7 @@
 </style>
 
 <svelte:head>
-  <title>Contact</title>
+  <title>Contact Me | Zaahir Moolla - Personal Website</title>
 </svelte:head>
 
 <section class="m-auto">

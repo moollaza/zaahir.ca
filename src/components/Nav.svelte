@@ -19,10 +19,6 @@
   a:hover {
     @apply text-orange-600;
   }
-
-  .menu-icon {
-    width: 20px;
-  }
 </style>
 
 <nav class="flex items-center justify-center flex-wrap bg-gray-500 p-4 shadow">

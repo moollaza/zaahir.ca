@@ -4,7 +4,6 @@
 
 <style>
   nav {
-    z-index: 1;
     background-color: rgba(255, 255, 255, 0.85);
   }
 
@@ -19,10 +18,6 @@
 
   a:hover {
     @apply text-orange-600;
-  }
-
-  .menu-icon {
-    width: 20px;
   }
 </style>
 

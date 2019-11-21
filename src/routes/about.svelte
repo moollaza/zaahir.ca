@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>About</title>
+  <title>About Me | Zaahir Moolla - Personal Website</title>
 </svelte:head>
 
 <section class="m-auto">

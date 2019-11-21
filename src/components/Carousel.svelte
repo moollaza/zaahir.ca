@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
 
-  let images = ["water", "record-player", "hairpin", "hotel-pool"];
+  let images = ["water", "bridge", "hairpin", "pool"];
   let currentNumber = 0;
   let timer = null;
 
@@ -31,7 +31,7 @@
   }
 
   .carousel-overlay {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .carousel-title,

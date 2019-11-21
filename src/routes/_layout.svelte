@@ -7,7 +7,10 @@
 
 <Nav {segment} />
 
-<main class="flex-grow flex">
+<main
+  class="flex-auto flex"
+  class:items-stretch={segment === undefined}
+  class:relative={segment === undefined}>
   <slot />
 </main>
 

@@ -23,7 +23,7 @@
         "@babel/plugin-transform-runtime": "^7.8.3",
         "@babel/preset-env": "^7.8.3",
         "@babel/runtime": "^7.8.3",
-        "@fullhuman/postcss-purgecss": "^1.2.0",
+        "@fullhuman/postcss-purgecss": "^2.1.0",
         "autoprefixer": "^9.7.3",
         "cssnano": "^4.1.10",
         "hover.css": "^2.3.2",

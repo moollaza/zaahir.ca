@@ -41,10 +41,10 @@
 </style>
 
 <nav class="flex items-center justify-center flex-wrap bg-gray-500 shadow">
-  <div class="w-full sm:w-2/4 md:w-auto flex justify-between items-center">
+  <div class="w-full sm:w-2/4 md:w-auto flex justify-center items-center">
     {#each links as link}
       <a
-        class="text-xs sm:text-sm md:text-lg flex-1 px-2 md:px-4 py-4
+        class="text-xs sm:text-sm md:text-lg px-2 md:px-4 py-4
         hover:text-orange-500"
         class:selected={segment === link.segment}
         href={link.href}

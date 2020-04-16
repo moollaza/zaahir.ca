@@ -1,5 +1,28 @@
 <script>
   export let segment;
+
+  const links = [
+    {
+      segment: undefined,
+      href: ".",
+      name: "Home"
+    },
+    {
+      segment: "about",
+      href: "/about",
+      name: "About"
+    },
+    {
+      segment: "projects",
+      href: "/projects",
+      name: "Projects"
+    },
+    {
+      segment: "contact",
+      href: "/contact",
+      name: "Contact"
+    }
+  ];
 </script>
 
 <style>
@@ -12,37 +35,22 @@
     transition: 0.3s all;
 
     &.selected {
-      @apply text-orange-600;
+      @apply text-orange-500;
     }
-  }
-
-  a:hover {
-    @apply text-orange-600;
   }
 </style>
 
-<nav class="flex items-center justify-center flex-wrap bg-gray-500 p-4 shadow">
-  <div class="w-full sm:w-2/4 md:w-auto flex justify-around items-center">
-    <a
-      class="flex-1 md:w-20"
-      class:selected={segment === undefined}
-      href="."
-      rel="prefetch">
-      Home
-    </a>
-    <a
-      class="flex-1 md:w-20"
-      class:selected={segment === 'about'}
-      href="/about"
-      rel="prefetch">
-      About
-    </a>
-    <a
-      class="flex-1 md:w-20"
-      class:selected={segment === 'contact'}
-      href="/contact"
-      rel="prefetch">
-      Contact
-    </a>
+<nav class="flex items-center justify-center flex-wrap bg-gray-500 shadow">
+  <div class="w-full sm:w-2/4 md:w-auto flex justify-between items-center">
+    {#each links as link}
+      <a
+        class="text-xs sm:text-sm md:text-lg flex-1 px-2 md:px-4 py-4
+        hover:text-orange-500"
+        class:selected={segment === link.segment}
+        href={link.href}
+        rel="prefetch">
+        {link.name}
+      </a>
+    {/each}
   </div>
 </nav>

@@ -1,34 +1,33 @@
-/* FONTS */
-@import "../static/fonts/source-sans-pro/source-sans-pro.css";
-@import "../static/fonts/source-serif-pro/source-serif-pro.css";
-
 /* BASE STYLES */
 html {
-    @apply antialiased text-center text-base text-gray-500;
-    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  @apply antialiased text-center text-base text-gray-500;
 }
 
 /* For About, Contact */
 section {
-    @apply px-4;
+  @apply px-4 py-12;
 
-    h1 {
-        @apply m-auto text-5xl text-gray-800 font-bold uppercase;
+  h1 {
+    @apply m-auto text-3xl text-gray-800 font-bold uppercase;
+
+    @screen md {
+      @apply text-5xl;
     }
+  }
 
-    .spacer {
-        width: 100px;
-        height: 2px;
-        @apply block mx-auto bg-orange-500 my-6 border-none;
+  .spacer {
+    width: 100px;
+    height: 2px;
+    @apply block mx-auto bg-orange-500 my-6 border-none;
+  }
+
+  p {
+    @apply text-gray-700;
+
+    a {
+      @apply text-orange-500;
     }
-
-    p {
-        @apply text-gray-700;
-
-        a {
-            @apply text-orange-500;
-        }
-    }
+  }
 
   img {
     @apply inline-block;

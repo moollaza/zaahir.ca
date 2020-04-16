@@ -8,7 +8,6 @@ import config from "sapper/config/rollup.js";
 import pkg from "./package.json";
 import getPreprocessor from "svelte-preprocess";
 import postcss from "rollup-plugin-postcss";
-import PurgeSvelte from "purgecss-from-svelte";
 import path from "path";
 const mode = process.env.NODE_ENV;
 const dev = mode === "development";
@@ -32,7 +31,26 @@ const postcssPlugins = (purgecss = false) => {
     purgecss &&
       require("@fullhuman/postcss-purgecss")({
         content: ["./**/*.svelte", "./src/template.html"],
-        defaultExtractor: (content) => content.match(/[\w-/.:]+(?<!:)/g) || [],
+        defaultExtractor: (content) => {
+          const regExp = new RegExp(/[\w-/.:]+(?<!:)/g);
+
+          const matchedTokens = [];
+
+          let match = regExp.exec(content);
+          // To make sure that you do not lose any tailwind classes used in class directive.
+          // https://github.com/tailwindcss/discuss/issues/254#issuecomment-517918397
+          while (match) {
+            if (match[0].startsWith("class:")) {
+              matchedTokens.push(match[0].substring(6));
+            } else {
+              matchedTokens.push(match[0]);
+            }
+
+            match = regExp.exec(content);
+          }
+
+          return matchedTokens;
+        },
         // Whitelist selectors to stop Purgecss from removing them from your CSS.
         whitelist: [],
       }),

@@ -1,64 +1,78 @@
-<!doctype html lang="en">
+<!DOCTYPE html lang="en">
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-    <head>
-        <meta charset='utf-8'>
-        <meta name='viewport' content='width=device-width,initial-scale=1.0'>
+    <!-- Custom Tags -->
+    <meta
+      name="description"
+      content="Personal Website of Zaahir Moolla. Frontend Developer at DuckDuckGo."
+    />
 
-        <!-- Custom Tags -->
-        <meta name="description" content="Personal Website of Zaahir Moolla. Frontend Developer at DuckDuckGo." />
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Zaahir Moolla - Personal Website" />
+    <meta
+      itemprop="description"
+      content="Personal Website of Zaahir Moolla. Frontend Developer at DuckDuckGo."
+    />
+    <meta itemprop="image" content="social.png" />
 
-        <!-- Google / Search Engine Tags -->
-        <meta itemprop="name" content="Zaahir Moolla - Personal Website">
-        <meta itemprop="description" content="Personal Website of Zaahir Moolla. Frontend Developer at DuckDuckGo.">
-        <meta itemprop="image" content="social.png">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://zaahir.ca" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zaahir Moolla - Personal Website" />
+    <meta
+      property="og:description"
+      content="Personal Website of Zaahir Moolla. Frontend Developer at DuckDuckGo."
+    />
+    <meta property="og:image" content="social.png" />
 
-        <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://zaahir.ca">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="Zaahir Moolla - Personal Website">
-        <meta property="og:description" content="Personal Website of Zaahir Moolla. Frontend Developer at DuckDuckGo.">
-        <meta property="og:image" content="social.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Zaahir Moolla - Personal Website" />
+    <meta
+      name="twitter:description"
+      content="Personal Website of Zaahir Moolla. Frontend Developer at DuckDuckGo."
+    />
+    <meta name="twitter:image" content="social.png" />
+    <!-- // End Custom Tags -->
 
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Zaahir Moolla - Personal Website">
-        <meta name="twitter:description" content="Personal Website of Zaahir Moolla. Frontend Developer at DuckDuckGo.">
-        <meta name="twitter:image" content="social.png">
-        <!-- // End Custom Tags -->
+    %sapper.base%
 
-        %sapper.base%
+    <link rel="stylesheet" href="global.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
 
-        <link rel='stylesheet' href='global.css'>
-        <link rel='icon' type='image/png' href='favicon.png'>
-
-        <!-- Sapper generates a <style> tag containing critical CSS
+    <!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
-        %sapper.styles%
+    %sapper.styles%
 
-        <!-- This contains the contents of the <svelte:head> component, if
+    <!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
-        %sapper.head%
-    </head>
+    %sapper.head%
+  </head>
 
-    <body>
-        <!-- The application will be rendered inside this element,
+  <body>
+    <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-        <div id='sapper' class="flex flex-col h-full items-stretch">
-            %sapper.html%
-        </div>
+    <div id="sapper" class="flex flex-col h-full items-stretch">
+      %sapper.html%
+    </div>
 
-        <!-- Sapper creates a <script> tag containing `src/client.js`
+    <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
-        %sapper.scripts%
+    %sapper.scripts%
 
-	<!-- Fathom - beautiful, simple website analytics -->
-	<script src="https://cdn.usefathom.com/3.js" site="NKUUIGYT" spa="pushstate"></script>
-	<script>
-	    window.fathom || document.write('<script src="https://kite.zaahir.ca/core.js"><\/script>');
-	</script>
-	<!-- / Fathom -->
-    </body>
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script
+      src="https://kite.zaahir.ca/script.js"
+      spa="auto"
+      site="NKUUIGYT"
+      included-domains="zaahir.ca"
+      defer
+    ></script>
+    <!-- / Fathom -->
+  </body>
 </html>

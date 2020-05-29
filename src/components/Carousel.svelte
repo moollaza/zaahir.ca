@@ -1,9 +1,11 @@
 <script>
-  import { onMount } from "svelte";
+  import { beforeUpdate, onMount } from "svelte";
 
   let images = ["water", "bridge", "hairpin", "pool"];
   let currentNumber = 0;
   let timer = null;
+  let supportsWebP = false;
+  let initialized = false;
 
   function startRotation() {
     timer = setInterval(loop, 5000);
@@ -18,6 +20,27 @@
     currentNumber += 1;
     if (currentNumber === 4) currentNumber = 0;
   }
+
+  function canUseWebP() {
+    return (
+      document
+        .createElement("canvas")
+        .toDataURL("image/webp")
+        .indexOf("data:image/webp") == 0
+    );
+  }
+
+  function setBackground(node, image) {
+    const fileType = supportsWebP ? "webp" : "jpg";
+    node.style.backgroundImage = `url('/carousel/${image}.${fileType}')`;
+  }
+
+  beforeUpdate(() => {
+    if (!initialized) {
+      supportsWebP = canUseWebP();
+      initialized = true;
+    }
+  });
 
   onMount(() => {
     startRotation();
@@ -53,10 +76,10 @@
 
 {#each images as image, i}
   <div
+    use:setBackground={image}
     class:active={currentNumber === i}
     class="carousel-image absolute inset-0 opacity-0 invisible bg-center
-    bg-cover bg-no-repeat"
-    style="background-image: url('/carousel/{image}.jpg')" />
+    bg-cover bg-no-repeat" />
 {/each}
 
 <div

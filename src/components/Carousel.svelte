@@ -21,6 +21,7 @@
     if (currentNumber === 4) currentNumber = 0;
   }
 
+  // source: https://stackoverflow.com/questions/5573096/detecting-webp-support
   function canUseWebP() {
     return (
       document

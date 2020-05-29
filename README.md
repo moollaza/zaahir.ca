@@ -6,8 +6,8 @@ The design was mostly borrowed from https://wrapbootstrap.com/theme/articulate-r
 
 ## Built with:
   - [Sapper](https://sapper.svelte.dev/)
-  - [Tailwindcss](https://tailwindcss.com)
+  - [Tailwind.css](https://tailwindcss.com)
   - [Hover.css](https://ianlunn.github.io/Hover/)
   - [icons8](https://icons8.com)
-  - [Now](https://zeit.co/home)
+  - [Vercel](https://vercel.com/home)
   - [Fathom Analytics](https://usefathom.com/)

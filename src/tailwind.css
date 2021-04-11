@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+
+@import "base";
+
+@import "hover.css/css/hover";
+
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

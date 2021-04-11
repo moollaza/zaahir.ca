@@ -1,7 +1,10 @@
 const { tailwindExtractor } = require('tailwindcss/lib/lib/purgeUnusedStyles');
 
+const mode = process.env.NODE_ENV;
+const dev = mode === 'development';
+
 module.exports = {
-	mode: 'jit',
+	mode: dev && 'jit',
 	purge: {
 		content: ['./src/**/*.{html,js,svelte,ts}'],
 		options: {

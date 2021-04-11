@@ -1,5 +1,5 @@
 {
-	"name": "zaahir.ca-kit",
+	"name": "zaahir.ca",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
@@ -29,8 +29,5 @@
 		"tailwindcss": "^2.1.0",
 		"vite": "^2.1.0"
 	},
-	"type": "module",
-	"dependencies": {
-		"zaahir.ca-kit": "link:"
-	}
+	"type": "module"
 }

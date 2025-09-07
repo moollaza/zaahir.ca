@@ -1,13 +1,29 @@
-# Zaahir Moolla - Personal Website
+# Zaahir's Personal Website
 
-This is my personal website. You can check it out here: https://zaahir.ca
+My little corner of the internet. Check it out [here](https://zaahir.ca).
 
-The design was mostly borrowed from https://wrapbootstrap.com/theme/articulate-resume-portfolio-WB0N5LC7P.
+## Tech Stack
 
-## Built with:
-  - [Sapper](https://sapper.svelte.dev/)
-  - [Tailwind.css](https://tailwindcss.com)
-  - [Hover.css](https://ianlunn.github.io/Hover/)
-  - [icons8](https://icons8.com)
-  - [Vercel](https://vercel.com/home)
-  - [Fathom Analytics](https://usefathom.com/)
+- **SvelteKit** (Svelte 5) - Full-stack framework
+- **Tailwind CSS** - Styles
+- **Vite** - Build tool
+- **Vercel** - Deployment
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Run type checking
+npm run check
+
+# Run tests
+npm test
+```

@@ -16,8 +16,7 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
-    "test": "playwright test",
-    "screenshot:homepage": "node scripts/screenshot-homepage.mjs"
+    "test": "playwright test"
   },
   "devDependencies": {
     "@argos-ci/playwright": "^6.1.3",

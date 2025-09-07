@@ -10,11 +10,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **Type checking & Accessibility**: `npm run check` - Run Svelte type checking and accessibility linting
 - **Linting**: `npm run lint` - Run ESLint and Prettier checks
 - **Formatting**: `npm run format` - Format code with Prettier
-- **E2E tests**: `npm test` - Run Playwright end-to-end tests
+- **E2E tests**: `npm test` - Run Playwright end-to-end tests (24 comprehensive tests)
 
 ## Architecture Overview
 
-This is a personal portfolio website built with **SvelteKit** (using **Svelte 5**) and styled with **Tailwind CSS v4**.
+This is a personal portfolio website built with **SvelteKit** (using **Svelte 5**) and styled with **Tailwind CSS v4**, featuring comprehensive visual regression testing with **Argos**.
 
 ### Important Documentation Links
 
@@ -110,10 +110,12 @@ This is a personal portfolio website built with **SvelteKit** (using **Svelte 5*
 
 ### Testing & Quality
 
-- **E2E Testing**: Comprehensive Playwright test suite with visual regression
-- **Cross-browser**: Tests run on desktop Chrome and mobile (iPhone 12)
-- **Visual Testing**: Screenshots to catch UI regressions automatically
-- **CI/CD**: GitHub Actions with parallel jobs and smart caching
+- **E2E Testing**: 24 comprehensive Playwright tests with DRY utilities
+- **Visual Regression**: Argos integration for cross-platform visual testing
+- **Test Coverage**: Desktop, mobile, tablet, and dark theme screenshots
+- **Smart Waiting**: Content-aware waits instead of networkidle for faster, more reliable tests
+- **Pre-commit Hooks**: Automatic formatting (Prettier) and linting (ESLint) on every commit
+- **CI/CD**: GitHub Actions with Argos reporter for visual diff reviews
 
 ### Development Tools
 
@@ -121,6 +123,16 @@ This is a personal portfolio website built with **SvelteKit** (using **Svelte 5*
 - **Quality Checks**: `npm run check` catches TypeScript and accessibility issues
 - **Accessibility**: All buttons/links have proper `aria-label` attributes
 - **Hot Reloading**: Fast development with Vite HMR
+- **Git Hooks**: Husky + lint-staged for automatic code quality on commit
+- **Test Utils**: DRY utilities in `e2e/test-utils.ts` for maintainable test code
+
+### Visual Testing with Argos
+
+- **Cross-platform Consistency**: Argos handles Linux CI vs macOS local differences
+- **Comprehensive Coverage**: All pages tested on desktop, mobile, and dark theme
+- **Smart Screenshots**: Content-aware waiting with font and image loading detection
+- **CI Integration**: Automatic screenshot uploads and PR status checks
+- **Review Process**: Visual diffs available in Argos dashboard for easy review
 
 ### Deployment
 

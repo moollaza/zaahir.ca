@@ -7,6 +7,7 @@
   import quickBudgetImg from "$lib/assets/images/projects/quick-budget.png?enhanced";
   import howManyRakatsImg from "$lib/assets/images/projects/how-many-rakats.png?enhanced";
   import uncovrImg from "$lib/assets/images/projects/uncovr.png?enhanced";
+  import personalWebsiteImg from "$lib/assets/images/projects/personal-website.png?enhanced";
 
   function countProjectClick(projectTitle: string, linkType: "demo" | "github") {
     if (typeof window !== "undefined" && window.fathom) {
@@ -57,7 +58,7 @@
       url: "https://zaahir.ca",
       github: "https://github.com/moollaza/zaahir.ca",
       tech: "SvelteKit, Tailwind",
-      image: uncovrImg, // Temporary using uncovr image until we have personal website screenshot
+      image: personalWebsiteImg, // Temporary using uncovr image until we have personal website screenshot
     },
     {
       id: 5,

@@ -17,8 +17,7 @@
     "format": "prettier --write .",
     "lint": "prettier --check . && eslint .",
     "test": "playwright test",
-    "screenshot:homepage": "node scripts/screenshot-homepage.mjs",
-    "screenshot:update-personal-website": "node scripts/update-personal-website-screenshot.mjs"
+    "screenshot:homepage": "node scripts/screenshot-homepage.mjs"
   },
   "devDependencies": {
     "@argos-ci/playwright": "^6.1.3",

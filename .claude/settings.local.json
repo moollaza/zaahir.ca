@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run check:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm run test:unit:*)",
+      "WebFetch(domain:www.joshwcomeau.com)",
+      "WebFetch(domain:www.figma.com)",
+      "Bash(git add:*)",
+      "Bash(npm run lint)",
+      "Bash(npm run format:*)",
+      "Bash(npm run test:smoke:*)",
+      "Bash(curl:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

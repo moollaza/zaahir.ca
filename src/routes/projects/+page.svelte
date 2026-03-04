@@ -73,7 +73,7 @@
       id: 6,
       title: "AutoBill",
       description:
-        "Free vehicle bill of sale for Canadians. Create a complete bill of sale in under 2 minutes—private by design, no account required. PDF generated locally in your browser.",
+        "Free vehicle bill of sale generator for Canadians. Private by design, no account required.",
       url: "https://autobill.ca",
       tech: "React, Tailwind",
       image: autobillImg,

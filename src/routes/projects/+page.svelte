@@ -72,8 +72,7 @@
     {
       id: 6,
       title: "AutoBill",
-      description:
-        "Free vehicle bill of sale generator for Canadians. Private by design, no account required.",
+      description: "Free vehicle bill of sale generator for Canadians. Private by design, no account required.",
       url: "https://autobill.ca",
       tech: "React, Tailwind",
       image: autobillImg,

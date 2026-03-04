@@ -8,6 +8,7 @@
   import howManyRakatsImg from "$lib/assets/images/projects/how-many-rakats.png?enhanced";
   import uncovrImg from "$lib/assets/images/projects/uncovr.png?enhanced";
   import personalWebsiteImg from "$lib/assets/images/projects/personal-website.png?enhanced";
+  import autobillImg from "$lib/assets/images/projects/autobill.png?enhanced";
 
   function countProjectClick(projectTitle: string, linkType: "demo" | "github") {
     if (typeof window !== "undefined" && window.fathom) {
@@ -67,6 +68,15 @@
       url: "https://playuncovr.xyz/",
       tech: "Svelte, Sapper, Tailwind",
       image: uncovrImg,
+    },
+    {
+      id: 6,
+      title: "AutoBill",
+      description:
+        "Free vehicle bill of sale for Canadians. Create a complete bill of sale in under 2 minutes—private by design, no account required. PDF generated locally in your browser.",
+      url: "https://autobill.ca",
+      tech: "SvelteKit, Tailwind",
+      image: autobillImg,
     },
   ];
 

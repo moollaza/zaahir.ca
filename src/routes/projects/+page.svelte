@@ -75,7 +75,7 @@
       description:
         "Free vehicle bill of sale for Canadians. Create a complete bill of sale in under 2 minutes—private by design, no account required. PDF generated locally in your browser.",
       url: "https://autobill.ca",
-      tech: "SvelteKit, Tailwind",
+      tech: "React, Tailwind",
       image: autobillImg,
     },
   ];

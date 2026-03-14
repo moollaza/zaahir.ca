@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Development Commands
 
-- **Start development server**: `npm run dev` - Starts Vite dev server with hot reloading
-- **Build for production**: `npm run build` - Builds optimized production bundle
-- **Preview production build**: `npm run preview` - Preview production build locally
-- **Type checking & Accessibility**: `npm run check` - Run Svelte type checking and accessibility linting
-- **Linting**: `npm run lint` - Run ESLint and Prettier checks
-- **Formatting**: `npm run format` - Format code with Prettier
-- **E2E tests**: `npm test` - Run Playwright end-to-end tests (24 comprehensive tests)
+- **Start development server**: `bun run dev` - Starts Vite dev server with hot reloading
+- **Build for production**: `bun run build` - Builds optimized production bundle
+- **Preview production build**: `bun run preview` - Preview production build locally
+- **Type checking & Accessibility**: `bun run check` - Run Svelte type checking and accessibility linting
+- **Linting**: `bun run lint` - Run ESLint and Prettier checks
+- **Formatting**: `bun run format` - Format code with Prettier
+- **E2E tests**: `bun test` - Run Playwright end-to-end tests (24 comprehensive tests)
 
 ## Architecture Overview
 
@@ -120,7 +120,7 @@ This is a personal portfolio website built with **SvelteKit** (using **Svelte 5*
 ### Development Tools
 
 - **Node Version**: Managed with `.node-version` file (Node 22.12+)
-- **Quality Checks**: `npm run check` catches TypeScript and accessibility issues
+- **Quality Checks**: `bun run check` catches TypeScript and accessibility issues
 - **Accessibility**: All buttons/links have proper `aria-label` attributes
 - **Hot Reloading**: Fast development with Vite HMR
 - **Git Hooks**: Husky + lint-staged for automatic code quality on commit

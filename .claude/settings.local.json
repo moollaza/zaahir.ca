@@ -17,5 +17,18 @@
     ],
     "deny": [],
     "ask": []
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$INPUT\" | grep -qE '\"command\"\\s*:\\s*\"[^\"]*\\b(npm (install|i |ci|run|exec|test|start)|npx |pnpm (install|run|add|exec|test|start|i )|pnpx |yarn (install|add|run|start))'; then echo 'Use bun instead of npm/pnpm/yarn. This project uses bun as its package manager.' >&2; exit 2; fi"
+          }
+        ]
+      }
+    ]
   }
 }

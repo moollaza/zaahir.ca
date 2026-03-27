@@ -59,13 +59,13 @@
       url: "https://zaahir.ca",
       github: "https://github.com/moollaza/zaahir.ca",
       tech: "SvelteKit, Tailwind",
-      image: personalWebsiteImg, // Temporary using uncovr image until we have personal website screenshot
+      image: personalWebsiteImg,
     },
     {
       id: 5,
       title: "Uncovr",
       description: "A simple game. Can you guess the hidden word?",
-      url: "https://playuncovr.xyz/",
+      url: "https://playuncovr.com/",
       tech: "Svelte, Sapper, Tailwind",
       image: uncovrImg,
     },
@@ -116,7 +116,11 @@
               onclick={() => countProjectClick(project.title, "demo")}
               aria-label="View {project.title} project"
             >
-              <enhanced:img src={project.image} alt={project.title} class="h-64 w-full object-cover object-top" />
+              <enhanced:img
+                src={project.image}
+                alt={project.title}
+                class="aspect-video w-full object-cover object-top"
+              />
             </a>
             <div class="p-6">
               <div class="mb-3 flex items-start justify-between">

@@ -55,6 +55,7 @@
     "wrangler": "^4.71.0"
   },
   "dependencies": {
+    "@sentry/sveltekit": "^10.48.0",
     "@sveltejs/enhanced-img": "^0.8.1",
     "@vercel/og": "^0.8.5",
     "lucide-svelte": "^0.542.0",

@@ -12,7 +12,7 @@
 <SEO
   title="Zaahir Moolla - Personal Website | Frontend Developer"
   description="Hey! I'm Zaahir, a frontend developer at DuckDuckGo who enjoys building things. Check out my projects and say hi!"
-  url="https://zaahir.ca/"
+  url="https://zaahir.ca"
 />
 
 <div class="relative flex min-h-[calc(100vh-4rem)] items-center justify-center overflow-hidden px-6">

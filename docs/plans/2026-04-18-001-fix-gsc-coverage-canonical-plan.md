@@ -1,7 +1,7 @@
 ---
 title: "fix: GSC coverage issues — canonical, trailing slash, 404"
 type: fix
-status: active
+status: completed
 date: 2026-04-18
 ---
 

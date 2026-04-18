@@ -9,6 +9,7 @@
   import uncovrImg from "$lib/assets/images/projects/uncovr.png?enhanced";
   import personalWebsiteImg from "$lib/assets/images/projects/personal-website.png?enhanced";
   import autobillImg from "$lib/assets/images/projects/autobill.png?enhanced";
+  import statusMonitorImg from "$lib/assets/images/projects/status-monitor.png?enhanced";
 
   function countProjectClick(projectTitle: string, linkType: "demo" | "github") {
     if (typeof window !== "undefined" && window.fathom) {
@@ -76,6 +77,15 @@
       url: "https://autobill.ca",
       tech: "React, Tailwind",
       image: autobillImg,
+    },
+    {
+      id: 7,
+      title: "Status Monitor",
+      description: "A macOS menu bar app that tracks outages and status updates for 1,600+ SaaS services.",
+      url: "https://moollaza.github.io/status-monitor/",
+      github: "https://github.com/moollaza/status-monitor",
+      tech: "Swift, SwiftUI, macOS",
+      image: statusMonitorImg,
     },
   ];
 

@@ -1,17 +1,29 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
+  # "bun" (not "npm") — the npm ecosystem does not read or update bun.lock,
+  # so it bumps package.json alone and leaves the lockfile stale, breaking
+  # `bun install --frozen-lockfile` in CI and on Cloudflare Workers Builds.
+  - package-ecosystem: "bun"
     directory: "/"
     schedule:
       interval: "weekly"
       day: "monday"
     open-pull-requests-limit: 2
     groups:
-      all-dependencies:
+      routine-dependencies:
         update-types:
-          - "major"
           - "minor"
           - "patch"
+      major-dependencies:
+        update-types:
+          - "major"
+    ignore:
+      # typescript-eslint declares peer `typescript: ">=4.8.4 <6.1.0"`, so TS 7
+      # breaks lint/typecheck outright. Hold TypeScript at 6.x until
+      # typescript-eslint ships TS >=7 support:
+      # https://github.com/typescript-eslint/typescript-eslint/issues/10940
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
     commit-message:
       prefix: "deps"
     labels:

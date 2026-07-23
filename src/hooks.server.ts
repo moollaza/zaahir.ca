@@ -1,6 +1,8 @@
+import { initCloudflareSentryHandle, sentryHandle, handleErrorWithSentry } from "@sentry/sveltekit";
+import { sequence } from "@sveltejs/kit/hooks";
 import type { Handle } from "@sveltejs/kit";
 
-export const handle: Handle = async ({ event, resolve }) => {
+const noTransformHandle: Handle = async ({ event, resolve }) => {
   const response = await resolve(event);
   const contentType = response.headers.get("content-type") || "";
   if (contentType.includes("text/html")) {
@@ -13,3 +15,14 @@ export const handle: Handle = async ({ event, resolve }) => {
   }
   return response;
 };
+
+export const handle = sequence(
+  initCloudflareSentryHandle({
+    dsn: "https://4dcd95d5f20b17ded6ac44807969c427@o305395.ingest.us.sentry.io/4511205459427328",
+    tracesSampleRate: 0,
+  }),
+  sentryHandle(),
+  noTransformHandle,
+);
+
+export const handleError = handleErrorWithSentry();

@@ -38,7 +38,7 @@ jobs:
       - run: bun install --frozen-lockfile
       - name: Get installed Playwright version
         id: playwright-version
-        run: echo "PLAYWRIGHT_VERSION=$(node -e "console.log(require('./package-lock.json').packages['node_modules/@playwright/test'].version)")" >> $GITHUB_OUTPUT
+        run: echo "PLAYWRIGHT_VERSION=$(node -e "console.log(require('@playwright/test/package.json').version)")" >> $GITHUB_OUTPUT
       - name: Cache playwright binaries
         uses: actions/cache@v6
         id: playwright-cache

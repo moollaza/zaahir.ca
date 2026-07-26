@@ -194,7 +194,10 @@ export async function assertNavigation(page: Page, route: RouteKey): Promise<voi
   // Check that the main content loaded
   switch (route) {
     case "home":
-      await expect(page.getByRole("heading", { name: "Zaahir Moolla" })).toBeVisible();
+      // .first() for the same reason the sibling cases use it: during a
+      // client-side nav back to home the outgoing page's heading can still be
+      // mounted, so an unscoped match trips Playwright's strict mode.
+      await expect(page.getByRole("heading", { name: "Zaahir Moolla" }).first()).toBeVisible();
       break;
     case "about":
       await expect(page.locator("h2").first()).toContainText("About Me");

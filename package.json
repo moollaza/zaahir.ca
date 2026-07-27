@@ -33,6 +33,7 @@
     "@testing-library/jest-dom": "^7.0.0",
     "@testing-library/svelte": "^5.4.2",
     "@vitest/browser": "^4.1.10",
+    "@vitest/browser-playwright": "^4.1.10",
     "eslint": "^10.8.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-svelte": "^3.22.0",
@@ -58,8 +59,11 @@
     "@sentry/sveltekit": "^10.67.0",
     "@sveltejs/enhanced-img": "^0.11.0",
     "@vercel/og": "^0.11.1",
-    "lucide-svelte": "^1.0.1",
+    "lucide-svelte": "^0.542.0",
     "satori-html": "^0.3.2"
+  },
+  "overrides": {
+    "vite": "^8.1.5"
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [

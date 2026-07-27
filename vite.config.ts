@@ -3,6 +3,7 @@ import { sveltekit } from "@sveltejs/kit/vite";
 import { sentrySvelteKit } from "@sentry/sveltekit";
 import { enhancedImages } from "@sveltejs/enhanced-img";
 import { defineConfig } from "vitest/config";
+import { playwright } from "@vitest/browser-playwright";
 
 export default defineConfig({
   plugins: [
@@ -30,7 +31,7 @@ export default defineConfig({
           environment: "browser",
           browser: {
             enabled: true,
-            provider: "playwright",
+            provider: playwright(),
             instances: [{ browser: "chromium" }],
           },
           include: ["src/**/*.svelte.{test,spec}.{js,ts}"],

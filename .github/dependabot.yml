@@ -24,6 +24,13 @@ updates:
       # https://github.com/typescript-eslint/typescript-eslint/issues/10940
       - dependency-name: "typescript"
         update-types: ["version-update:semver-major"]
+      # lucide v1 removed every brand icon (trademark reasons), including
+      # `Github`, which this site uses on the contact and projects pages.
+      # Only generic marks (GitBranch, GitFork, …) remain, so upgrading means
+      # choosing a replacement — a design decision, not a mechanical bump.
+      # Hold at 0.x until that call is made.
+      - dependency-name: "lucide-svelte"
+        update-types: ["version-update:semver-major"]
     commit-message:
       prefix: "deps"
     labels:
